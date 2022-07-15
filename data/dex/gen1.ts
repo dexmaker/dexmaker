@@ -10,6 +10,12 @@ type Gen1Type = Exclude<
 
 const dex: Dex<Gen1Stat, Gen1Type> = {
   dexName: "RBY",
+  template: {
+    name: "",
+    indexNumber: 0,
+    stats: { HP: 0, Attack: 0, Defense: 0, Special: 0, Speed: 0 },
+    types: [null, null],
+  },
   mons: [
     {
       name: "Bulbasaur",

@@ -7,5 +7,6 @@ interface Mon<Stats extends string, MonType extends string> {
 
 export interface Dex<Stat extends string, MonType extends string> {
   dexName: string;
+  template: Mon<Stat, MonType>;
   mons: Mon<Stat, MonType>[];
 }
