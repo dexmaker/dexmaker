@@ -11,7 +11,7 @@ type Gen2Stat =
 
 type Gen2Type = Exclude<PokemonType, PokemonType.FAIRY>;
 
-const dex: Dex<Gen2Stat, Gen2Type> = {
+const gen2dex: Dex<Gen2Stat, Gen2Type> = {
   dexName: "GSC",
   template: {
     name: "",
@@ -43,4 +43,4 @@ const dex: Dex<Gen2Stat, Gen2Type> = {
   ],
 };
 
-export default dex;
+export default gen2dex;

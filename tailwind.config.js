@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -6,6 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      gray: "gray",
+      pokemontype: {
+        grass: "lightgreen",
+        poison: "purple",
+        normal: "red",
+      },
+    },
   },
   plugins: [],
 };

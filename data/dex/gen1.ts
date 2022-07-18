@@ -8,7 +8,7 @@ type Gen1Type = Exclude<
   PokemonType.FAIRY | PokemonType.STEEL | PokemonType.DARK
 >;
 
-const dex: Dex<Gen1Stat, Gen1Type> = {
+const gen1dex: Dex<Gen1Stat, Gen1Type> = {
   dexName: "RBY",
   template: {
     name: "",
@@ -23,7 +23,19 @@ const dex: Dex<Gen1Stat, Gen1Type> = {
       stats: { HP: 45, Attack: 49, Defense: 49, Special: 65, Speed: 45 },
       types: [PokemonType.GRASS, PokemonType.POISON],
     },
+    {
+      name: "Snorlax",
+      indexNumber: 143,
+      stats: { HP: 160, Attack: 110, Defense: 65, Special: 65, Speed: 30 },
+      types: [PokemonType.NORMAL],
+    },
+    {
+      name: "Mewtwo",
+      indexNumber: 150,
+      stats: { HP: 106, Attack: 110, Defense: 90, Special: 154, Speed: 130 },
+      types: [PokemonType.PSYCHIC],
+    },
   ],
 };
 
-export default dex;
+export default gen1dex;
