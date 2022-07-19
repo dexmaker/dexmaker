@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import Image from "next/image";
 import { TypeBadge } from "./TypeBadge";
 import { StatGauge } from "./StatGauge";
 import { Title } from "./ui/Title";
@@ -10,6 +11,9 @@ export const MonSummary: FC<{
 }> = ({ dex, mon }) => {
   return (
     <article>
+      {mon.spriteUrl && (
+        <Image src={mon.spriteUrl} alt={mon.name} width={60} height={60} />
+      )}
       <Title>
         #{mon.indexNumber}: {mon.name}
       </Title>

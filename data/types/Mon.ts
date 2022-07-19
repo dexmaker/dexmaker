@@ -8,4 +8,5 @@ export interface Mon<
   indexNumber: number;
   stats: Record<Stat, number>;
   types: [MonType] | [MonType, MonType];
+  spriteUrl?: string;
 }
