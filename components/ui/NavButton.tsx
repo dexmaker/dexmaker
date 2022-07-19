@@ -1,16 +1,25 @@
 import { clsx } from "clsx";
-import React, { FC, HTMLAttributes, PropsWithChildren } from "react";
+import React, {
+  FC,
+  forwardRef,
+  HTMLAttributes,
+  PropsWithChildren,
+} from "react";
 
-export const NavButton: FC<
-  PropsWithChildren<HTMLAttributes<HTMLSpanElement>>
-> = (props) => {
+type NavButtonProps = PropsWithChildren<HTMLAttributes<HTMLSpanElement>>;
+
+export const NavButton: FC<NavButtonProps> = forwardRef<
+  HTMLSpanElement,
+  NavButtonProps
+>(function NavButton(props, ref) {
   return (
     <span
       className={clsx(
-        "p-1 w-32 border border-black",
+        "p-1 grow border border-black border-r-0 first:rounded-l-sm last:border-r last:rounded-r-sm",
         !props["aria-disabled"] && "cursor-pointer hover:underline text-link"
       )}
+      ref={ref}
       {...props}
     />
   );
-};
+});

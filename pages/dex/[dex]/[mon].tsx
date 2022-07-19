@@ -25,40 +25,34 @@ const MonPage: FC<MonPageProps> = ({ dexId, dex, mon, prev, next }) => {
           </Link>
         </TextLink>
       </nav>
-      <MonSummary dex={dex} mon={mon} />
-      <nav className="flex text-xs text-center">
-        {prev && (
-          <NavButton
-            style={{ borderTopLeftRadius: 1, borderBottomLeftRadius: 1 }}
-          >
-            <Link href={`/dex/${dexId}/${prev.indexNumber}`}>
-              <a>
+      <div className="max-w-2xl mx-auto">
+        <MonSummary dex={dex} mon={mon} />
+        <nav className="flex justify-center text-xs text-center">
+          {prev && (
+            <Link href={`/dex/${dexId}/${prev.indexNumber}`} passHref>
+              <NavButton>
                 &larr; #{prev.indexNumber}
                 <br />
                 {prev.name}
-              </a>
+              </NavButton>
             </Link>
+          )}
+          <NavButton aria-disabled>
+            #{mon.indexNumber}
+            <br />
+            {mon.name}
           </NavButton>
-        )}
-        <NavButton style={{ borderWidth: "1px 0" }} aria-disabled>
-          #{mon.indexNumber}
-          <br />
-          {mon.name}
-        </NavButton>
-        {next && (
-          <NavButton
-            style={{ borderTopRightRadius: 1, borderBottomRightRadius: 1 }}
-          >
-            <Link href={`/dex/${dexId}/${next.indexNumber}`}>
-              <a>
+          {next && (
+            <Link href={`/dex/${dexId}/${next.indexNumber}`} passHref>
+              <NavButton>
                 #{next.indexNumber} &rarr;
                 <br />
                 {next.name}
-              </a>
+              </NavButton>
             </Link>
-          </NavButton>
-        )}
-      </nav>
+          )}
+        </nav>
+      </div>
     </>
   );
 };

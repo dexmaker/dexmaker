@@ -27,21 +27,19 @@ export const MonSummary: FC<{
           </div>
         </div>
       </div>
-      <table className="table-fixed">
-        <tbody>
-          {Object.entries(dex.template.stats).map(([stat, statDefault]) => (
-            <tr key={stat}>
-              <td className="w-20">{stat}</td>
-              <td className="w-20 text-right">
-                {mon.stats[stat] || statDefault}
-              </td>
-              <td>
-                <StatGauge value={mon.stats[stat] || statDefault} />
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <ul className="block">
+        {Object.entries(dex.template.stats).map(([stat, statDefault]) => (
+          <li key={stat} className="flex w-full justify-evenly">
+            <div className="w-28">{stat}</div>
+            <div className="block w-16 text-right">
+              {mon.stats[stat] || statDefault}
+            </div>
+            <div className="grow">
+              <StatGauge value={mon.stats[stat] || statDefault} />
+            </div>
+          </li>
+        ))}
+      </ul>
     </article>
   );
 };
