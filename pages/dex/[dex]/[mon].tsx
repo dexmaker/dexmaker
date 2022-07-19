@@ -5,17 +5,15 @@ import { Dex, Mon, PokemonType } from "@data/types";
 import { dexes } from "@data/dex";
 import { MonSummary } from "@components/MonSummary";
 import { TextLink } from "@components/ui/TextLink";
-import { NavButton } from "@components/ui/NavButton";
+import { MonNavigation } from "@components/MonNavigation";
 
 interface MonPageProps {
   dex: Dex;
   mon: Mon;
-  prev?: Mon;
-  next?: Mon;
   dexId: string;
 }
 
-const MonPage: FC<MonPageProps> = ({ dexId, dex, mon, prev, next }) => {
+const MonPage: FC<MonPageProps> = ({ dexId, dex, mon }) => {
   return (
     <>
       <nav>
@@ -27,31 +25,7 @@ const MonPage: FC<MonPageProps> = ({ dexId, dex, mon, prev, next }) => {
       </nav>
       <div className="max-w-2xl mx-auto">
         <MonSummary dex={dex} mon={mon} />
-        <nav className="flex justify-center text-xs text-center">
-          {prev && (
-            <Link href={`/dex/${dexId}/${prev.indexNumber}`} passHref>
-              <NavButton>
-                &larr; #{prev.indexNumber}
-                <br />
-                {prev.name}
-              </NavButton>
-            </Link>
-          )}
-          <NavButton aria-disabled>
-            #{mon.indexNumber}
-            <br />
-            {mon.name}
-          </NavButton>
-          {next && (
-            <Link href={`/dex/${dexId}/${next.indexNumber}`} passHref>
-              <NavButton>
-                #{next.indexNumber} &rarr;
-                <br />
-                {next.name}
-              </NavButton>
-            </Link>
-          )}
-        </nav>
+        <MonNavigation dexId={dexId} dex={dex} current={mon.indexNumber} />
       </div>
     </>
   );
@@ -77,17 +51,10 @@ export const getServerSideProps: GetServerSideProps<MonPageProps> = async (
     return { notFound: true };
   }
 
-  const prev = dex.mons.indexOf(mon) > 0 && dex.mons[dex.mons.indexOf(mon) - 1];
-  const next =
-    dex.mons.indexOf(mon) < dex.mons.length - 1 &&
-    dex.mons[dex.mons.indexOf(mon) + 1];
-
   return {
     props: {
       dex,
       mon,
-      prev,
-      next,
       dexId,
     },
   };
