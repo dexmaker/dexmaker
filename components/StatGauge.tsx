@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { FC } from "react";
 
 const toHue = (n: number) => (n / 255) * 180;
@@ -5,9 +6,9 @@ const toHue = (n: number) => (n / 255) * 180;
 export const StatGauge: FC<{ value: number }> = ({ value }) => {
   return (
     <span className="w-64 block h-3 mx-2">
-      <div
+      <motion.div
         className="h-3 block rounded-md"
-        style={{
+        animate={{
           width: `${(value * 100) / 255}%`,
           backgroundColor: `hsl(${toHue(value)}, 100%, 45%)`,
         }}
