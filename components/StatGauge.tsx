@@ -5,7 +5,7 @@ const toHue = (n: number) => (n / 255) * 180;
 
 export const StatGauge: FC<{ value: number }> = ({ value }) => {
   return (
-    <span className="w-64 h-5 mx-2 inline-flex content-center">
+    <span className="w-40 h-5 mx-2 inline-flex content-center">
       <motion.div
         className="h-3"
         animate={{
