@@ -19,11 +19,15 @@ export const getServerSideProps: GetServerSideProps<MonPageProps> = async (
   req
 ) => {
   const dex: Dex<string, PokemonType> = dexes[req.params.dex as string];
+  if (!dex) {
+    return { notFound: true };
+  }
+
   const mon = dex.mons.find(
     (mon) => mon.indexNumber === Number(req.params.mon)
   );
 
-  if (!dex || !mon) {
+  if (!mon) {
     return { notFound: true };
   }
 
