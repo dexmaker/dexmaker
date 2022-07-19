@@ -16,18 +16,18 @@ const DexPage: FC<DexPageProps> = ({ dex, dexId }) => {
   return (
     <>
       <Title>{dex.dexName}</Title>
-      <table>
+      <table className="table-fixed">
         <thead>
           <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Types</th>
+            <th className="text-left w-14">#</th>
+            <th className="text-left">Name</th>
+            <th className="text-left">Type</th>
           </tr>
         </thead>
         <tbody>
           {dex.mons.map((mon) => (
             <tr key={mon.indexNumber}>
-              <td>{mon.indexNumber}</td>
+              <td className="text-left">{mon.indexNumber}</td>
               <td>
                 <Link href={`/dex/${dexId}/${mon.indexNumber}`}>
                   <TextLink>{mon.name}</TextLink>

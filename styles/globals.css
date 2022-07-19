@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'pkmn';
+  src: url('rbygsc.ttf');
+}
+
+html {
+  font-family: pkmn;
+  line-height: 2em;
+}
