@@ -29,7 +29,9 @@ const MonPage: FC<MonPageProps> = ({ dexId, dex, mon, prev, next }) => {
             <li>
               Previous:{" "}
               <Link href={`/dex/${dexId}/${prev.indexNumber}`}>
-                <TextLink>{prev.name}</TextLink>
+                <TextLink>
+                  #{prev.indexNumber} - {prev.name}
+                </TextLink>
               </Link>
             </li>
           )}
@@ -37,7 +39,9 @@ const MonPage: FC<MonPageProps> = ({ dexId, dex, mon, prev, next }) => {
             <li>
               Next:{" "}
               <Link href={`/dex/${dexId}/${next.indexNumber}`}>
-                <TextLink>{next.name}</TextLink>
+                <TextLink>
+                  #{next.indexNumber} - {next.name}
+                </TextLink>
               </Link>
             </li>
           )}
