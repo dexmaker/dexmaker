@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { TypeBadge } from "./TypeBadge";
 import { StatGauge } from "./StatGauge";
+import { Title } from "./ui/Title";
 import { Dex, Mon } from "@data/types";
 
 export const MonSummary: FC<{
@@ -9,9 +10,9 @@ export const MonSummary: FC<{
 }> = ({ dex, mon }) => {
   return (
     <article>
-      <h1 className="text-3xl">
+      <Title>
         #{mon.indexNumber}: {mon.name}
-      </h1>
+      </Title>
       <TypeBadge type={mon.types[0]} />
       {mon.types.length > 1 && <TypeBadge type={mon.types[1]} />}
       <table>

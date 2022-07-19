@@ -11,6 +11,7 @@ export enum PokemonType {
   ELECTRIC = "Electric",
   GHOST = "Ghost",
   PSYCHIC = "Psychic",
+  FIGHTING = "Fighting",
   ICE = "Ice",
   DRAGON = "Dragon",
   STEEL = "Steel",
