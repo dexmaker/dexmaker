@@ -24,23 +24,24 @@ const MonPage: FC<MonPageProps> = ({ dexId, dex, mon, prev, next }) => {
       </nav>
       <MonSummary dex={dex} mon={mon} />
       <nav>
-        <ul>
+        <ul className="flex text-xs text-center">
           {prev && (
-            <li>
-              Previous:{" "}
+            <li className="p-1 w-48 rounded-l-sm border">
               <Link href={`/dex/${dexId}/${prev.indexNumber}`}>
                 <TextLink>
-                  #{prev.indexNumber} - {prev.name}
+                  &larr; #{prev.indexNumber} - {prev.name}
                 </TextLink>
               </Link>
             </li>
           )}
+          <li className="p-1 w-48 border border-l-0">
+            #{mon.indexNumber} - {mon.name}
+          </li>
           {next && (
-            <li>
-              Next:{" "}
+            <li className="p-1 w-48 border border-l-0 rounded-r-sm">
               <Link href={`/dex/${dexId}/${next.indexNumber}`}>
                 <TextLink>
-                  #{next.indexNumber} - {next.name}
+                  #{next.indexNumber} - {next.name} &rarr;
                 </TextLink>
               </Link>
             </li>

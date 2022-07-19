@@ -11,14 +11,22 @@ export const MonSummary: FC<{
 }> = ({ dex, mon }) => {
   return (
     <article>
-      {mon.spriteUrl && (
-        <Image src={mon.spriteUrl} alt={mon.name} width={60} height={60} />
-      )}
-      <Title>
-        #{mon.indexNumber}: {mon.name}
-      </Title>
-      <TypeBadge type={mon.types[0]} />
-      {mon.types.length > 1 && <TypeBadge type={mon.types[1]} />}
+      <div className="flex items-center">
+        <div className="m-2">
+          {mon.spriteUrl && (
+            <Image src={mon.spriteUrl} alt={mon.name} width={60} height={60} />
+          )}
+        </div>
+        <div className="flex flex-col">
+          <Title>
+            #{mon.indexNumber}: {mon.name}
+          </Title>
+          <div>
+            <TypeBadge type={mon.types[0]} />
+            {mon.types.length > 1 && <TypeBadge type={mon.types[1]} />}
+          </div>
+        </div>
+      </div>
       <table className="table-fixed">
         <tbody>
           {Object.entries(dex.template.stats).map(([stat, statDefault]) => (
