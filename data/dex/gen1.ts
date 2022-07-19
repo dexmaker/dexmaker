@@ -9,6 +9,7 @@ type Gen1Type = Exclude<
 >;
 
 const gen1dex: Dex<Gen1Stat, Gen1Type> = {
+  id: 1,
   dexName: "RBY",
   template: {
     name: "",

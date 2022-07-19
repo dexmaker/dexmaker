@@ -4,10 +4,9 @@ import { NavButton } from "./ui/NavButton";
 import { Dex } from "@data/types";
 
 export const MonNavigation: FC<{
-  dexId: string;
   dex: Dex;
   current: number;
-}> = ({ dexId, dex, current }) => {
+}> = ({ dex, current }) => {
   const mon = dex.mons.find((mon) => mon.indexNumber === current);
   const prev = dex.mons.indexOf(mon) > 0 && dex.mons[dex.mons.indexOf(mon) - 1];
   const next =
@@ -17,7 +16,7 @@ export const MonNavigation: FC<{
   return (
     <nav className="flex justify-center text-xs text-center">
       {prev && (
-        <Link href={`/dex/${dexId}/${prev.indexNumber}`} passHref>
+        <Link href={`/dex/${dex.id}/${prev.indexNumber}`} passHref>
           <NavButton>
             &larr; #{prev.indexNumber}
             <br />
@@ -31,7 +30,7 @@ export const MonNavigation: FC<{
         {mon.name}
       </NavButton>
       {next && (
-        <Link href={`/dex/${dexId}/${next.indexNumber}`} passHref>
+        <Link href={`/dex/${dex.id}/${next.indexNumber}`} passHref>
           <NavButton>
             #{next.indexNumber} &rarr;
             <br />

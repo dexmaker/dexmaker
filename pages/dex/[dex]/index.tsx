@@ -1,7 +1,7 @@
 import { GetServerSideProps } from "next";
 import React, { FC } from "react";
 import Link from "next/link";
-import { Dex, PokemonType } from "@data/types";
+import { Dex } from "@data/types";
 import { dexes } from "@data/dex";
 import { TypeBadge } from "@components/TypeBadge";
 import { Title } from "@components/ui/Title";
@@ -9,10 +9,9 @@ import { TextLink } from "@components/ui/TextLink";
 
 interface DexPageProps {
   dex: Dex;
-  dexId: string;
 }
 
-const DexPage: FC<DexPageProps> = ({ dex, dexId }) => {
+const DexPage: FC<DexPageProps> = ({ dex }) => {
   return (
     <>
       <Title>{dex.dexName}</Title>
@@ -29,7 +28,7 @@ const DexPage: FC<DexPageProps> = ({ dex, dexId }) => {
             <tr key={mon.indexNumber}>
               <td className="text-left">{mon.indexNumber}</td>
               <td>
-                <Link href={`/dex/${dexId}/${mon.indexNumber}`}>
+                <Link href={`/dex/${dex.id}/${mon.indexNumber}`}>
                   <TextLink>{mon.name}</TextLink>
                 </Link>
               </td>
@@ -50,7 +49,7 @@ export default DexPage;
 export const getServerSideProps: GetServerSideProps<DexPageProps> = async (
   req
 ) => {
-  const dex: Dex<string, PokemonType> = dexes[req.params.dex as string];
+  const dex: Dex = dexes.find((dex) => dex.id === Number(req.params.dex));
   if (!dex) {
     return { notFound: true };
   }
@@ -58,7 +57,6 @@ export const getServerSideProps: GetServerSideProps<DexPageProps> = async (
   return {
     props: {
       dex,
-      dexId: req.params?.dex.toString(),
     },
   };
 };

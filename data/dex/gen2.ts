@@ -12,6 +12,7 @@ type Gen2Stat =
 type Gen2Type = Exclude<PokemonType, PokemonType.FAIRY>;
 
 const gen2dex: Dex<Gen2Stat, Gen2Type> = {
+  id: 2,
   dexName: "GSC",
   template: {
     name: "",
