@@ -7,6 +7,7 @@ module.exports = {
     extend: {},
     colors: {
       link: "#34c",
+      black: "black",
       gray: "gray",
       pokemontype: {
         normal: "#8f99a1",

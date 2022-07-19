@@ -5,6 +5,7 @@ import { Dex, Mon, PokemonType } from "@data/types";
 import { dexes } from "@data/dex";
 import { MonSummary } from "@components/MonSummary";
 import { TextLink } from "@components/ui/TextLink";
+import { NavButton } from "@components/ui/NavButton";
 
 interface MonPageProps {
   dex: Dex;
@@ -18,35 +19,45 @@ const MonPage: FC<MonPageProps> = ({ dexId, dex, mon, prev, next }) => {
   return (
     <>
       <nav>
-        <Link href={`/dex/${dexId}`}>
-          <TextLink>Back</TextLink>
-        </Link>
+        <TextLink>
+          <Link href={`/dex/${dexId}`}>
+            <a>Back</a>
+          </Link>
+        </TextLink>
       </nav>
       <MonSummary dex={dex} mon={mon} />
-      <nav>
-        <ul className="flex text-xs text-center">
-          {prev && (
-            <li className="p-1 w-48 rounded-l-sm border">
-              <Link href={`/dex/${dexId}/${prev.indexNumber}`}>
-                <TextLink>
-                  &larr; #{prev.indexNumber} - {prev.name}
-                </TextLink>
-              </Link>
-            </li>
-          )}
-          <li className="p-1 w-48 border border-l-0">
-            #{mon.indexNumber} - {mon.name}
-          </li>
-          {next && (
-            <li className="p-1 w-48 border border-l-0 rounded-r-sm">
-              <Link href={`/dex/${dexId}/${next.indexNumber}`}>
-                <TextLink>
-                  #{next.indexNumber} - {next.name} &rarr;
-                </TextLink>
-              </Link>
-            </li>
-          )}
-        </ul>
+      <nav className="flex text-xs text-center">
+        {prev && (
+          <NavButton
+            style={{ borderTopLeftRadius: 1, borderBottomLeftRadius: 1 }}
+          >
+            <Link href={`/dex/${dexId}/${prev.indexNumber}`}>
+              <a>
+                &larr; #{prev.indexNumber}
+                <br />
+                {prev.name}
+              </a>
+            </Link>
+          </NavButton>
+        )}
+        <NavButton style={{ borderWidth: "1px 0" }} aria-disabled>
+          #{mon.indexNumber}
+          <br />
+          {mon.name}
+        </NavButton>
+        {next && (
+          <NavButton
+            style={{ borderTopRightRadius: 1, borderBottomRightRadius: 1 }}
+          >
+            <Link href={`/dex/${dexId}/${next.indexNumber}`}>
+              <a>
+                #{next.indexNumber} &rarr;
+                <br />
+                {next.name}
+              </a>
+            </Link>
+          </NavButton>
+        )}
       </nav>
     </>
   );

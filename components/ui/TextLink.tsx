@@ -4,7 +4,7 @@ export const TextLink: FC<AnchorHTMLAttributes<HTMLAnchorElement>> = (
   props
 ) => {
   return (
-    <a
+    <span
       className="font-bold text-link hover:underline cursor-pointer"
       {...props}
     />
