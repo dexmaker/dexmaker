@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import Image from "next/image";
 import { Badge } from "./Badge";
 import { StatGauge } from "./StatGauge";
 import { Title } from "./ui/Title";
@@ -15,44 +14,46 @@ const MonFields: FC<{ fieldRules: FieldRule[]; mon: Mon }> = ({
   }));
 
   return (
-    <ul className="block">
-      {zipped.map(({ fieldRule, field }) => (
-        <li key={fieldRule.name} className="flex w-full justify-evenly">
-          <div className="w-28">{fieldRule.name}</div>
-          {fieldRule.type === FieldType.NUMERIC &&
-            field?.type === FieldType.NUMERIC && (
-              <>
-                <div className="block w-16 text-right">
-                  {field?.value || fieldRule.default}
-                </div>
-                <div className="grow">
-                  <StatGauge
-                    value={field?.value || fieldRule.min}
-                    min={fieldRule.min}
-                    max={fieldRule.max}
-                  />
-                </div>
-              </>
-            )}
-          {fieldRule.type === FieldType.ENUM && (
-            <div className="grow">
-              {field?.type === FieldType.ENUM ? (
-                <Badge
-                  color={
-                    fieldRule.options.find((opt) => opt.value === field.value)
-                      ?.color
-                  }
-                >
-                  {field.value || fieldRule.default}
-                </Badge>
-              ) : (
-                "--"
+    <table className="table-fixed">
+      <tbody>
+        {zipped.map(({ fieldRule, field }) => (
+          <tr key={fieldRule.name}>
+            <td className="whitespace-nowrap">{fieldRule.name}</td>
+            {fieldRule.type === FieldType.NUMERIC &&
+              field?.type === FieldType.NUMERIC && (
+                <>
+                  <td className="w-16 text-right">
+                    {field?.value || fieldRule.default}
+                  </td>
+                  <td className="w-full">
+                    <StatGauge
+                      value={field?.value || fieldRule.min}
+                      min={fieldRule.min}
+                      max={fieldRule.max}
+                    />
+                  </td>
+                </>
               )}
-            </div>
-          )}
-        </li>
-      ))}
-    </ul>
+            {fieldRule.type === FieldType.ENUM && (
+              <td colSpan={2}>
+                {field?.type === FieldType.ENUM ? (
+                  <Badge
+                    color={
+                      fieldRule.options.find((opt) => opt.value === field.value)
+                        ?.color
+                    }
+                  >
+                    {field.value || fieldRule.default}
+                  </Badge>
+                ) : (
+                  "--"
+                )}
+              </td>
+            )}
+          </tr>
+        ))}
+      </tbody>
+    </table>
   );
 };
 
@@ -65,7 +66,9 @@ export const MonSummary: FC<{
       <div className="flex items-center">
         <div className="m-2">
           {mon.spriteUrl && (
-            <Image src={mon.spriteUrl} alt={mon.name} width={60} height={60} />
+            <div className="overflow-hidden flex justify-center items-center w-16 h-16">
+              <img src={mon.spriteUrl} alt={mon.name} className="w-14 h-auto" />
+            </div>
           )}
         </div>
         <div className="flex flex-col">

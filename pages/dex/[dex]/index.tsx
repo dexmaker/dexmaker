@@ -17,6 +17,7 @@ const DexPage: FC<DexPageProps> = ({ dex }) => {
       <table className="table-fixed overflow-x-auto">
         <thead>
           <tr>
+            <th />
             <th className="text-left w-14">#</th>
             <th className="text-left">Name</th>
           </tr>
@@ -24,6 +25,17 @@ const DexPage: FC<DexPageProps> = ({ dex }) => {
         <tbody>
           {dex.mons.map((mon) => (
             <tr key={mon.indexNumber}>
+              <td>
+                {mon.spriteUrl && (
+                  <div className="overflow-hidden flex justify-center items-center w-8 h-8 mr-2">
+                    <img
+                      src={mon.spriteUrl}
+                      alt={mon.name}
+                      className="w-5 h-auto"
+                    />
+                  </div>
+                )}
+              </td>
               <td className="text-left">{mon.indexNumber}</td>
               <td>
                 <Link href={`/dex/${dex.id}/${mon.indexNumber}`}>
