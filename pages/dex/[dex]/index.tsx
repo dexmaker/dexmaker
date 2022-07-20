@@ -15,7 +15,7 @@ const DexPage: FC<DexPageProps> = ({ dex }) => {
   return (
     <>
       <Title>{dex.dexName}</Title>
-      <table className="table-fixed">
+      <table className="table-fixed overflow-x-auto">
         <thead>
           <tr>
             <th className="text-left w-14">#</th>
@@ -32,7 +32,7 @@ const DexPage: FC<DexPageProps> = ({ dex }) => {
                   <TextLink>{mon.name}</TextLink>
                 </Link>
               </td>
-              <td>
+              <td className="whitespace-nowrap">
                 <TypeBadge type={mon.types[0]} />
                 {mon.types[1] && <TypeBadge type={mon.types[1]} />}
               </td>
