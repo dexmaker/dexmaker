@@ -1,12 +1,9 @@
-import { PokemonType } from "./PokemonType";
+import { Field } from "./Field";
+import { FieldType } from "./FieldType";
 
-export interface Mon<
-  Stat extends string = string,
-  MonType extends PokemonType = PokemonType
-> {
+export interface Mon {
   name: string;
   indexNumber: number;
-  stats: Record<Stat, number>;
-  types: [MonType] | [MonType, MonType];
   spriteUrl?: string;
+  fields: Field<FieldType>[];
 }

@@ -1,12 +1,9 @@
 import { Mon } from "./Mon";
-import { PokemonType } from "./PokemonType";
+import { FieldRule } from "./FieldRule";
 
-export interface Dex<
-  Stat extends string = string,
-  MonType extends PokemonType = PokemonType
-> {
+export interface Dex {
   id: number;
-  dexName: string;
-  template: Mon<Stat, MonType>;
-  mons: Mon<Stat, MonType>[];
+  name: string;
+  fields: FieldRule[];
+  mons: Mon[];
 }

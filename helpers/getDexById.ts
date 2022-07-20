@@ -1,4 +1,4 @@
-import { dexes } from "@data/dex";
+import { dexes } from "@data/presets";
 import { Dex, QueryResult } from "@data/types";
 
 export const getDexById = (id: number): QueryResult<Dex> => {

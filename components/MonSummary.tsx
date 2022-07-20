@@ -1,9 +1,60 @@
 import React, { FC } from "react";
 import Image from "next/image";
-import { TypeBadge } from "./TypeBadge";
+import { Badge } from "./Badge";
 import { StatGauge } from "./StatGauge";
 import { Title } from "./ui/Title";
-import { Dex, Mon } from "@data/types";
+import { Dex, FieldRule, FieldType, Mon } from "@data/types";
+
+const MonFields: FC<{ fieldRules: FieldRule[]; mon: Mon }> = ({
+  fieldRules,
+  mon,
+}) => {
+  const zipped = fieldRules.map((fieldRule) => ({
+    fieldRule,
+    field: mon.fields.find(({ name }) => name === fieldRule.name),
+  }));
+
+  return (
+    <ul className="block">
+      {zipped.map(({ fieldRule, field }) => (
+        <li key={fieldRule.name} className="flex w-full justify-evenly">
+          <div className="w-28">{fieldRule.name}</div>
+          {fieldRule.type === FieldType.NUMERIC &&
+            field?.type === FieldType.NUMERIC && (
+              <>
+                <div className="block w-16 text-right">
+                  {field?.value || fieldRule.default}
+                </div>
+                <div className="grow">
+                  <StatGauge
+                    value={field?.value || fieldRule.min}
+                    min={fieldRule.min}
+                    max={fieldRule.max}
+                  />
+                </div>
+              </>
+            )}
+          {fieldRule.type === FieldType.ENUM && (
+            <div className="grow">
+              {field?.type === FieldType.ENUM ? (
+                <Badge
+                  color={
+                    fieldRule.options.find((opt) => opt.value === field.value)
+                      ?.color
+                  }
+                >
+                  {field.value || fieldRule.default}
+                </Badge>
+              ) : (
+                "--"
+              )}
+            </div>
+          )}
+        </li>
+      ))}
+    </ul>
+  );
+};
 
 export const MonSummary: FC<{
   dex: Dex;
@@ -21,25 +72,9 @@ export const MonSummary: FC<{
           <Title>
             #{mon.indexNumber}: {mon.name}
           </Title>
-          <div>
-            <TypeBadge type={mon.types[0]} />
-            {mon.types[1] && <TypeBadge type={mon.types[1]} />}
-          </div>
         </div>
       </div>
-      <ul className="block">
-        {Object.entries(dex.template.stats).map(([stat, statDefault]) => (
-          <li key={stat} className="flex w-full justify-evenly">
-            <div className="w-28">{stat}</div>
-            <div className="block w-16 text-right">
-              {mon.stats[stat] || statDefault}
-            </div>
-            <div className="grow">
-              <StatGauge value={mon.stats[stat] || statDefault} />
-            </div>
-          </li>
-        ))}
-      </ul>
+      <MonFields fieldRules={dex.fields} mon={mon} />
     </article>
   );
 };

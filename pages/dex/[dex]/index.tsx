@@ -2,7 +2,6 @@ import { GetServerSideProps } from "next";
 import React, { FC } from "react";
 import Link from "next/link";
 import { Dex } from "@data/types";
-import { TypeBadge } from "@components/TypeBadge";
 import { Title } from "@components/ui/Title";
 import { TextLink } from "@components/ui/TextLink";
 import { getDexById } from "@helpers/getDexById";
@@ -14,13 +13,12 @@ interface DexPageProps {
 const DexPage: FC<DexPageProps> = ({ dex }) => {
   return (
     <>
-      <Title>{dex.dexName}</Title>
+      <Title>{dex.name}</Title>
       <table className="table-fixed overflow-x-auto">
         <thead>
           <tr>
             <th className="text-left w-14">#</th>
             <th className="text-left">Name</th>
-            <th className="text-left">Type</th>
           </tr>
         </thead>
         <tbody>
@@ -31,10 +29,6 @@ const DexPage: FC<DexPageProps> = ({ dex }) => {
                 <Link href={`/dex/${dex.id}/${mon.indexNumber}`}>
                   <TextLink>{mon.name}</TextLink>
                 </Link>
-              </td>
-              <td className="whitespace-nowrap">
-                <TypeBadge type={mon.types[0]} />
-                {mon.types[1] && <TypeBadge type={mon.types[1]} />}
               </td>
             </tr>
           ))}
