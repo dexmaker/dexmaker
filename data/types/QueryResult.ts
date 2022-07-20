@@ -12,3 +12,8 @@ interface FoundQueryResult<T> extends QueryResultWrapper {
 }
 
 export type QueryResult<T> = NotFoundQueryResult | FoundQueryResult<T>;
+
+export interface ListQueryResult<T> {
+  data: T[];
+  count: number;
+}
