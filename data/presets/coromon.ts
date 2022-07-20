@@ -18,12 +18,12 @@ export const coromonDex: Dex = {
         { value: "Dark Magic", color: "blue" },
       ],
     },
-    { name: "HP", type: FieldType.NUMERIC, min: 1, max: 500 },
-    { name: "Attack", type: FieldType.NUMERIC, min: 1, max: 500 },
-    { name: "Defense", type: FieldType.NUMERIC, min: 1, max: 500 },
-    { name: "Special Attack", type: FieldType.NUMERIC, min: 1, max: 500 },
-    { name: "Special Defense", type: FieldType.NUMERIC, min: 1, max: 500 },
-    { name: "Speed", type: FieldType.NUMERIC, min: 1, max: 500 },
+    { name: "HP", type: FieldType.NUMERIC, min: 1, max: 350 },
+    { name: "Attack", type: FieldType.NUMERIC, min: 1, max: 350 },
+    { name: "Defense", type: FieldType.NUMERIC, min: 1, max: 350 },
+    { name: "Special Attack", type: FieldType.NUMERIC, min: 1, max: 350 },
+    { name: "Special Defense", type: FieldType.NUMERIC, min: 1, max: 350 },
+    { name: "Speed", type: FieldType.NUMERIC, min: 1, max: 350 },
   ],
   mons: [
     {
