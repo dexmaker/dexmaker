@@ -4,6 +4,8 @@ import Link from "next/link";
 import { getDexes } from "@helpers/getDexes";
 import { Dex } from "@data/types";
 import { TextLink } from "@components/ui/TextLink";
+import { MetaTags } from "@components/MetaTags";
+import { Title } from "@components/ui/Title";
 
 interface HomePageProps {
   dexes: Dex[];
@@ -12,16 +14,19 @@ interface HomePageProps {
 const HomePage: FC<HomePageProps> = ({ dexes }) => {
   return (
     <div className="w-3xl mx-auto">
+      <MetaTags title="View dexes" canonicalUri="/" />
       <header>
-        <h1 className="text-3xl mb-3">DexMaker</h1>
+        <Title>DexMaker</Title>
       </header>
       <main>
         <ul>
           {dexes.map((dex) => (
             <li key={dex.id}>
-              <Link href={"/dex/" + dex.id} passHref>
-                <TextLink>{dex.name}</TextLink>
-              </Link>
+              <TextLink>
+                <Link href={"/dex/" + dex.id} passHref>
+                  {dex.name}
+                </Link>
+              </TextLink>
             </li>
           ))}
         </ul>

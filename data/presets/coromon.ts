@@ -28,7 +28,7 @@ export const coromonDex: Dex = {
   mons: [
     {
       name: "Cubzero",
-      spriteUrl: "/coromon/1.gif",
+      spriteUrl: "/images/coromon/1.gif",
       indexNumber: 1,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
@@ -43,7 +43,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Aroara",
-      spriteUrl: "/coromon/2.gif",
+      spriteUrl: "/images/coromon/2.gif",
       indexNumber: 2,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
@@ -58,7 +58,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Bearealis",
-      spriteUrl: "/coromon/3.gif",
+      spriteUrl: "/images/coromon/3.gif",
       indexNumber: 3,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
@@ -73,7 +73,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Toruga",
-      spriteUrl: "/coromon/4.gif",
+      spriteUrl: "/images/coromon/4.gif",
       indexNumber: 4,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
@@ -88,7 +88,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Embaval",
-      spriteUrl: "/coromon/5.gif",
+      spriteUrl: "/images/coromon/5.gif",
       indexNumber: 5,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
@@ -103,7 +103,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Volcadon",
-      spriteUrl: "/coromon/6.gif",
+      spriteUrl: "/images/coromon/6.gif",
       indexNumber: 6,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
@@ -118,7 +118,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Nibblegar",
-      spriteUrl: "/coromon/7.gif",
+      spriteUrl: "/images/coromon/7.gif",
       indexNumber: 7,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
@@ -133,7 +133,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Sheartooth",
-      spriteUrl: "/coromon/8.gif",
+      spriteUrl: "/images/coromon/8.gif",
       indexNumber: 8,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
@@ -148,7 +148,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Megalobite",
-      spriteUrl: "/coromon/9.gif",
+      spriteUrl: "/images/coromon/9.gif",
       indexNumber: 9,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
@@ -163,7 +163,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Swurmy",
-      spriteUrl: "/coromon/10.gif",
+      spriteUrl: "/images/coromon/10.gif",
       indexNumber: 10,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
@@ -178,7 +178,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Beezel",
-      spriteUrl: "/coromon/11.gif",
+      spriteUrl: "/images/coromon/11.gif",
       indexNumber: 11,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
@@ -193,7 +193,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Humbee",
-      spriteUrl: "/coromon/12.gif",
+      spriteUrl: "/images/coromon/12.gif",
       indexNumber: 12,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
@@ -208,7 +208,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Silquill",
-      spriteUrl: "/coromon/13.gif",
+      spriteUrl: "/images/coromon/13.gif",
       indexNumber: 13,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
@@ -223,7 +223,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Gildwing",
-      spriteUrl: "/coromon/14.gif",
+      spriteUrl: "/images/coromon/14.gif",
       indexNumber: 14,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
@@ -238,7 +238,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Golbeak",
-      spriteUrl: "/coromon/15.gif",
+      spriteUrl: "/images/coromon/15.gif",
       indexNumber: 15,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
@@ -253,7 +253,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Slitherpin",
-      spriteUrl: "/coromon/16.gif",
+      spriteUrl: "/images/coromon/16.gif",
       indexNumber: 16,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
@@ -268,7 +268,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Serpike",
-      spriteUrl: "/coromon/17.gif",
+      spriteUrl: "/images/coromon/17.gif",
       indexNumber: 17,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
@@ -283,7 +283,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Houndos",
-      spriteUrl: "/coromon/18.gif",
+      spriteUrl: "/images/coromon/18.gif",
       indexNumber: 18,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
@@ -298,7 +298,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Hountrion",
-      spriteUrl: "/coromon/19.gif",
+      spriteUrl: "/images/coromon/19.gif",
       indexNumber: 19,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
@@ -313,7 +313,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Armado",
-      spriteUrl: "/coromon/20.gif",
+      spriteUrl: "/images/coromon/20.gif",
       indexNumber: 20,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
@@ -328,7 +328,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Armadil",
-      spriteUrl: "/coromon/21.gif",
+      spriteUrl: "/images/coromon/21.gif",
       indexNumber: 21,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
@@ -343,7 +343,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Armadon",
-      spriteUrl: "/coromon/22.gif",
+      spriteUrl: "/images/coromon/22.gif",
       indexNumber: 22,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
@@ -358,7 +358,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Sanscale",
-      spriteUrl: "/coromon/23.gif",
+      spriteUrl: "/images/coromon/23.gif",
       indexNumber: 23,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -373,7 +373,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Caradune",
-      spriteUrl: "/coromon/24.gif",
+      spriteUrl: "/images/coromon/24.gif",
       indexNumber: 24,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -388,7 +388,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Bittybolt",
-      spriteUrl: "/coromon/25.gif",
+      spriteUrl: "/images/coromon/25.gif",
       indexNumber: 25,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
@@ -403,7 +403,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Toravolt",
-      spriteUrl: "/coromon/26.gif",
+      spriteUrl: "/images/coromon/26.gif",
       indexNumber: 26,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
@@ -418,7 +418,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Bloby",
-      spriteUrl: "/coromon/27.gif",
+      spriteUrl: "/images/coromon/27.gif",
       indexNumber: 27,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
@@ -433,7 +433,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Molteye",
-      spriteUrl: "/coromon/28.gif",
+      spriteUrl: "/images/coromon/28.gif",
       indexNumber: 28,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
@@ -448,7 +448,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Ashclops",
-      spriteUrl: "/coromon/29.gif",
+      spriteUrl: "/images/coromon/29.gif",
       indexNumber: 29,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
@@ -463,7 +463,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Fiddly",
-      spriteUrl: "/coromon/30.gif",
+      spriteUrl: "/images/coromon/30.gif",
       indexNumber: 30,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
@@ -478,7 +478,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Ucaclaw",
-      spriteUrl: "/coromon/31.gif",
+      spriteUrl: "/images/coromon/31.gif",
       indexNumber: 31,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
@@ -493,7 +493,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Moffel",
-      spriteUrl: "/coromon/32.gif",
+      spriteUrl: "/images/coromon/32.gif",
       indexNumber: 32,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -508,7 +508,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Digmow",
-      spriteUrl: "/coromon/33.gif",
+      spriteUrl: "/images/coromon/33.gif",
       indexNumber: 33,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -523,7 +523,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Dugterra",
-      spriteUrl: "/coromon/34.gif",
+      spriteUrl: "/images/coromon/34.gif",
       indexNumber: 34,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -538,7 +538,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Buzzlet",
-      spriteUrl: "/coromon/35.gif",
+      spriteUrl: "/images/coromon/35.gif",
       indexNumber: 35,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
@@ -553,7 +553,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Bazzer",
-      spriteUrl: "/coromon/36.gif",
+      spriteUrl: "/images/coromon/36.gif",
       indexNumber: 36,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
@@ -568,7 +568,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Rhynobuz",
-      spriteUrl: "/coromon/37.gif",
+      spriteUrl: "/images/coromon/37.gif",
       indexNumber: 37,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
@@ -583,7 +583,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Lunarpup",
-      spriteUrl: "/coromon/38.gif",
+      spriteUrl: "/images/coromon/38.gif",
       indexNumber: 38,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
@@ -598,7 +598,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Lunarwulf",
-      spriteUrl: "/coromon/39.gif",
+      spriteUrl: "/images/coromon/39.gif",
       indexNumber: 39,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
@@ -613,7 +613,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Eclyptor",
-      spriteUrl: "/coromon/40.gif",
+      spriteUrl: "/images/coromon/40.gif",
       indexNumber: 40,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
@@ -628,7 +628,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Kryo",
-      spriteUrl: "/coromon/41.gif",
+      spriteUrl: "/images/coromon/41.gif",
       indexNumber: 41,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
@@ -643,7 +643,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Krypeek",
-      spriteUrl: "/coromon/42.gif",
+      spriteUrl: "/images/coromon/42.gif",
       indexNumber: 42,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
@@ -658,7 +658,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Krybeest",
-      spriteUrl: "/coromon/43.gif",
+      spriteUrl: "/images/coromon/43.gif",
       indexNumber: 43,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
@@ -673,7 +673,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Bren",
-      spriteUrl: "/coromon/44.gif",
+      spriteUrl: "/images/coromon/44.gif",
       indexNumber: 44,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
@@ -688,7 +688,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Pyrochick",
-      spriteUrl: "/coromon/45.gif",
+      spriteUrl: "/images/coromon/45.gif",
       indexNumber: 45,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
@@ -703,7 +703,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Infinix",
-      spriteUrl: "/coromon/46.gif",
+      spriteUrl: "/images/coromon/46.gif",
       indexNumber: 46,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
@@ -718,7 +718,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Acie",
-      spriteUrl: "/coromon/47.gif",
+      spriteUrl: "/images/coromon/47.gif",
       indexNumber: 47,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
@@ -733,7 +733,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Deecie",
-      spriteUrl: "/coromon/48.gif",
+      spriteUrl: "/images/coromon/48.gif",
       indexNumber: 48,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
@@ -748,7 +748,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Kyreptil",
-      spriteUrl: "/coromon/49.gif",
+      spriteUrl: "/images/coromon/49.gif",
       indexNumber: 49,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -763,7 +763,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Kyraptor",
-      spriteUrl: "/coromon/50.gif",
+      spriteUrl: "/images/coromon/50.gif",
       indexNumber: 50,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -778,7 +778,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Gella",
-      spriteUrl: "/coromon/51.gif",
+      spriteUrl: "/images/coromon/51.gif",
       indexNumber: 51,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
@@ -793,7 +793,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Gellish",
-      spriteUrl: "/coromon/52.gif",
+      spriteUrl: "/images/coromon/52.gif",
       indexNumber: 52,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
@@ -808,7 +808,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Gelaquad",
-      spriteUrl: "/coromon/53.gif",
+      spriteUrl: "/images/coromon/53.gif",
       indexNumber: 53,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
@@ -823,7 +823,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Skarbone",
-      spriteUrl: "/coromon/54.gif",
+      spriteUrl: "/images/coromon/54.gif",
       indexNumber: 54,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -838,7 +838,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Skuldra",
-      spriteUrl: "/coromon/55.gif",
+      spriteUrl: "/images/coromon/55.gif",
       indexNumber: 55,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -853,7 +853,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Skelatops",
-      spriteUrl: "/coromon/56.gif",
+      spriteUrl: "/images/coromon/56.gif",
       indexNumber: 56,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -868,7 +868,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Droople",
-      spriteUrl: "/coromon/57.gif",
+      spriteUrl: "/images/coromon/57.gif",
       indexNumber: 57,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
@@ -883,7 +883,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Mudma",
-      spriteUrl: "/coromon/58.gif",
+      spriteUrl: "/images/coromon/58.gif",
       indexNumber: 58,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
@@ -898,7 +898,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Arcta",
-      spriteUrl: "/coromon/59.gif",
+      spriteUrl: "/images/coromon/59.gif",
       indexNumber: 59,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
@@ -913,7 +913,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Arcturos",
-      spriteUrl: "/coromon/60.gif",
+      spriteUrl: "/images/coromon/60.gif",
       indexNumber: 60,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
@@ -928,7 +928,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Seraphace",
-      spriteUrl: "/coromon/61.gif",
+      spriteUrl: "/images/coromon/61.gif",
       indexNumber: 61,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
@@ -943,7 +943,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Grimmask",
-      spriteUrl: "/coromon/62.gif",
+      spriteUrl: "/images/coromon/62.gif",
       indexNumber: 62,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
@@ -958,7 +958,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Squidma",
-      spriteUrl: "/coromon/63.gif",
+      spriteUrl: "/images/coromon/63.gif",
       indexNumber: 63,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
@@ -973,7 +973,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Magmilus",
-      spriteUrl: "/coromon/64.gif",
+      spriteUrl: "/images/coromon/64.gif",
       indexNumber: 64,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
@@ -988,7 +988,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Lumon",
-      spriteUrl: "/coromon/65.gif",
+      spriteUrl: "/images/coromon/65.gif",
       indexNumber: 65,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
@@ -1003,7 +1003,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Lampyre",
-      spriteUrl: "/coromon/66.gif",
+      spriteUrl: "/images/coromon/66.gif",
       indexNumber: 66,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
@@ -1018,7 +1018,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Lumasect",
-      spriteUrl: "/coromon/67.gif",
+      spriteUrl: "/images/coromon/67.gif",
       indexNumber: 67,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
@@ -1033,7 +1033,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Patterbit",
-      spriteUrl: "/coromon/68.gif",
+      spriteUrl: "/images/coromon/68.gif",
       indexNumber: 68,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
@@ -1048,7 +1048,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Pitterbyte",
-      spriteUrl: "/coromon/69.gif",
+      spriteUrl: "/images/coromon/69.gif",
       indexNumber: 69,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
@@ -1063,7 +1063,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Cyberite",
-      spriteUrl: "/coromon/70.gif",
+      spriteUrl: "/images/coromon/70.gif",
       indexNumber: 70,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
@@ -1078,7 +1078,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Decibite",
-      spriteUrl: "/coromon/71.gif",
+      spriteUrl: "/images/coromon/71.gif",
       indexNumber: 71,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -1093,7 +1093,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Centilla",
-      spriteUrl: "/coromon/72.gif",
+      spriteUrl: "/images/coromon/72.gif",
       indexNumber: 72,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -1108,7 +1108,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Millidont",
-      spriteUrl: "/coromon/73.gif",
+      spriteUrl: "/images/coromon/73.gif",
       indexNumber: 73,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -1123,7 +1123,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Taddle",
-      spriteUrl: "/coromon/74.gif",
+      spriteUrl: "/images/coromon/74.gif",
       indexNumber: 74,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
@@ -1138,7 +1138,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Fibio",
-      spriteUrl: "/coromon/75.gif",
+      spriteUrl: "/images/coromon/75.gif",
       indexNumber: 75,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
@@ -1153,7 +1153,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Chonktoad",
-      spriteUrl: "/coromon/76.gif",
+      spriteUrl: "/images/coromon/76.gif",
       indexNumber: 76,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
@@ -1168,7 +1168,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Tinshel",
-      spriteUrl: "/coromon/77.gif",
+      spriteUrl: "/images/coromon/77.gif",
       indexNumber: 77,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -1183,7 +1183,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Dunpod",
-      spriteUrl: "/coromon/78.gif",
+      spriteUrl: "/images/coromon/78.gif",
       indexNumber: 78,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -1198,7 +1198,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Sandril",
-      spriteUrl: "/coromon/79.gif",
+      spriteUrl: "/images/coromon/79.gif",
       indexNumber: 79,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -1213,7 +1213,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Blizzburd",
-      spriteUrl: "/coromon/80.gif",
+      spriteUrl: "/images/coromon/80.gif",
       indexNumber: 80,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
@@ -1228,7 +1228,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Blizzian",
-      spriteUrl: "/coromon/81.gif",
+      spriteUrl: "/images/coromon/81.gif",
       indexNumber: 81,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
@@ -1243,7 +1243,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Purrgy",
-      spriteUrl: "/coromon/82.gif",
+      spriteUrl: "/images/coromon/82.gif",
       indexNumber: 82,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
@@ -1258,7 +1258,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Ghinx",
-      spriteUrl: "/coromon/83.gif",
+      spriteUrl: "/images/coromon/83.gif",
       indexNumber: 83,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
@@ -1273,7 +1273,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Purrghast",
-      spriteUrl: "/coromon/84.gif",
+      spriteUrl: "/images/coromon/84.gif",
       indexNumber: 84,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
@@ -1288,7 +1288,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Gauslime",
-      spriteUrl: "/coromon/85.gif",
+      spriteUrl: "/images/coromon/85.gif",
       indexNumber: 85,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
@@ -1303,7 +1303,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Magnamire",
-      spriteUrl: "/coromon/86.gif",
+      spriteUrl: "/images/coromon/86.gif",
       indexNumber: 86,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
@@ -1318,7 +1318,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Quagoo",
-      spriteUrl: "/coromon/87.gif",
+      spriteUrl: "/images/coromon/87.gif",
       indexNumber: 87,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
@@ -1333,7 +1333,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Swampa",
-      spriteUrl: "/coromon/88.gif",
+      spriteUrl: "/images/coromon/88.gif",
       indexNumber: 88,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
@@ -1348,7 +1348,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Squidly",
-      spriteUrl: "/coromon/89.gif",
+      spriteUrl: "/images/coromon/89.gif",
       indexNumber: 89,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
@@ -1363,7 +1363,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Octotle",
-      spriteUrl: "/coromon/90.gif",
+      spriteUrl: "/images/coromon/90.gif",
       indexNumber: 90,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
@@ -1378,7 +1378,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Ruptius",
-      spriteUrl: "/coromon/91.gif",
+      spriteUrl: "/images/coromon/91.gif",
       indexNumber: 91,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
@@ -1393,7 +1393,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Vulbrute",
-      spriteUrl: "/coromon/92.gif",
+      spriteUrl: "/images/coromon/92.gif",
       indexNumber: 92,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
@@ -1408,7 +1408,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Mooby",
-      spriteUrl: "/coromon/93.gif",
+      spriteUrl: "/images/coromon/93.gif",
       indexNumber: 93,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -1423,7 +1423,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Molbash",
-      spriteUrl: "/coromon/94.gif",
+      spriteUrl: "/images/coromon/94.gif",
       indexNumber: 94,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -1438,7 +1438,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Malavite",
-      spriteUrl: "/coromon/95.gif",
+      spriteUrl: "/images/coromon/95.gif",
       indexNumber: 95,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
@@ -1453,7 +1453,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Flowish",
-      spriteUrl: "/coromon/96.gif",
+      spriteUrl: "/images/coromon/96.gif",
       indexNumber: 96,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
@@ -1468,7 +1468,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Daricara",
-      spriteUrl: "/coromon/97.gif",
+      spriteUrl: "/images/coromon/97.gif",
       indexNumber: 97,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
@@ -1483,7 +1483,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Mino",
-      spriteUrl: "/coromon/98.gif",
+      spriteUrl: "/images/coromon/98.gif",
       indexNumber: 98,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
@@ -1498,7 +1498,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Blazitaur",
-      spriteUrl: "/coromon/99.gif",
+      spriteUrl: "/images/coromon/99.gif",
       indexNumber: 99,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
@@ -1513,7 +1513,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Frova",
-      spriteUrl: "/coromon/100.gif",
+      spriteUrl: "/images/coromon/100.gif",
       indexNumber: 100,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
@@ -1528,7 +1528,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Froshell",
-      spriteUrl: "/coromon/101.gif",
+      spriteUrl: "/images/coromon/101.gif",
       indexNumber: 101,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
@@ -1543,7 +1543,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Glamoth",
-      spriteUrl: "/coromon/102.gif",
+      spriteUrl: "/images/coromon/102.gif",
       indexNumber: 102,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
@@ -1558,7 +1558,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Otogy",
-      spriteUrl: "/coromon/103.gif",
+      spriteUrl: "/images/coromon/103.gif",
       indexNumber: 103,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
@@ -1573,7 +1573,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Orotchy",
-      spriteUrl: "/coromon/104.gif",
+      spriteUrl: "/images/coromon/104.gif",
       indexNumber: 104,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
@@ -1588,7 +1588,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Shimshell",
-      spriteUrl: "/coromon/105.gif",
+      spriteUrl: "/images/coromon/105.gif",
       indexNumber: 105,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
@@ -1603,7 +1603,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Atlantern",
-      spriteUrl: "/coromon/106.gif",
+      spriteUrl: "/images/coromon/106.gif",
       indexNumber: 106,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
@@ -1618,7 +1618,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Ucaclaw",
-      spriteUrl: "/coromon/107.gif",
+      spriteUrl: "/images/coromon/107.gif",
       indexNumber: 107,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Dark Magic" },
@@ -1633,7 +1633,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Lumon",
-      spriteUrl: "/coromon/108.gif",
+      spriteUrl: "/images/coromon/108.gif",
       indexNumber: 108,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Dark Magic" },
@@ -1648,7 +1648,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Lampyre",
-      spriteUrl: "/coromon/109.gif",
+      spriteUrl: "/images/coromon/109.gif",
       indexNumber: 109,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Dark Magic" },
@@ -1663,7 +1663,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Lumasect",
-      spriteUrl: "/coromon/110.gif",
+      spriteUrl: "/images/coromon/110.gif",
       indexNumber: 110,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Dark Magic" },
@@ -1678,7 +1678,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Centilla",
-      spriteUrl: "/coromon/111.gif",
+      spriteUrl: "/images/coromon/111.gif",
       indexNumber: 111,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Dark Magic" },
@@ -1693,7 +1693,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Millidont",
-      spriteUrl: "/coromon/112.gif",
+      spriteUrl: "/images/coromon/112.gif",
       indexNumber: 112,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Dark Magic" },
@@ -1708,7 +1708,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Arcta",
-      spriteUrl: "/coromon/113.gif",
+      spriteUrl: "/images/coromon/113.gif",
       indexNumber: 113,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Dark Magic" },
@@ -1723,7 +1723,7 @@ export const coromonDex: Dex = {
     },
     {
       name: "Arcturos",
-      spriteUrl: "/coromon/114.gif",
+      spriteUrl: "/images/coromon/114.gif",
       indexNumber: 114,
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Dark Magic" },

@@ -6,6 +6,7 @@ import { MonSummary } from "@components/MonSummary";
 import { TextLink } from "@components/ui/TextLink";
 import { MonNavigation } from "@components/MonNavigation";
 import { getMon } from "@helpers/getMon";
+import { MetaTags } from "@components/MetaTags";
 
 interface MonPageProps {
   dex: Dex;
@@ -15,6 +16,10 @@ interface MonPageProps {
 const MonPage: FC<MonPageProps> = ({ dex, mon }) => {
   return (
     <>
+      <MetaTags
+        title={mon.name}
+        canonicalUri={`/dex/${dex.id}/${mon.indexNumber}`}
+      />
       <nav>
         <TextLink>
           <Link href={`/dex/${dex.id}`}>

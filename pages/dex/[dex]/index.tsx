@@ -5,6 +5,7 @@ import { Dex } from "@data/types";
 import { Title } from "@components/ui/Title";
 import { TextLink } from "@components/ui/TextLink";
 import { getDexById } from "@helpers/getDexById";
+import { MetaTags } from "@components/MetaTags";
 
 interface DexPageProps {
   dex: Dex;
@@ -13,6 +14,7 @@ interface DexPageProps {
 const DexPage: FC<DexPageProps> = ({ dex }) => {
   return (
     <>
+      <MetaTags title={dex.name} canonicalUri={`/dex/${dex.id}`} />
       <Title>{dex.name}</Title>
       <table className="table-fixed overflow-x-auto">
         <thead>
