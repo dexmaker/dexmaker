@@ -22,8 +22,10 @@ const MonFields: FC<{ fieldRules: FieldRule[]; mon: Mon }> = ({
             {fieldRule.type === FieldType.NUMERIC &&
               field?.type === FieldType.NUMERIC && (
                 <>
-                  <td className="w-16 text-right">
-                    {field?.value || fieldRule.default}
+                  <td className="text-right">
+                    <div className="w-16">
+                      {field?.value || fieldRule.default}
+                    </div>
                   </td>
                   <td className="w-full">
                     <StatGauge

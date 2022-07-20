@@ -6,7 +6,6 @@ import { MonNavigation } from "@components/MonNavigation";
 import { getMon } from "@helpers/getMon";
 import { MetaTags } from "@components/MetaTags";
 import { PageNavigation } from "@components/ui/PageNavigation";
-import { PageContent } from "@components/ui/PageContent";
 
 interface MonPageProps {
   dex: Dex;
@@ -21,12 +20,12 @@ const MonPage: FC<MonPageProps> = ({ dex, mon }) => {
         canonicalUri={`/dex/${dex.id}/${mon.indexNumber}`}
       />
       <PageNavigation backHref={`/dex/${dex.id}`} />
-      <PageContent>
+      <main className="page-content">
         <div className="max-w-2xl mx-auto">
           <MonSummary dex={dex} mon={mon} />
           <MonNavigation dex={dex} current={mon.indexNumber} />
         </div>
-      </PageContent>
+      </main>
     </>
   );
 };

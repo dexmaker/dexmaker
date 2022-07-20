@@ -16,4 +16,20 @@ html {
   .btn {
     @apply text-xs p-2 m-1 border rounded-sm cursor-pointer active:bg-gray active:text-white;
   }
+
+  .mon-nav {
+    @apply p-1 basis-1 grow border border-black border-r-0 first:rounded-l-sm last:border-r last:rounded-r-sm;
+
+    &:not([disabled]) {
+      @apply cursor-pointer hover:underline text-link;
+    }
+  }
+
+  .link {
+    @apply font-bold text-link hover:underline cursor-pointer;
+  }
+
+  .page-content {
+    @apply max-w-5xl p-3 mx-auto;
+  }
 }

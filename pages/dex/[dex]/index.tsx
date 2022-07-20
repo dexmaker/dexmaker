@@ -3,11 +3,9 @@ import React, { FC } from "react";
 import Link from "next/link";
 import { Dex } from "@data/types";
 import { Header } from "@components/ui/Header";
-import { TextLink } from "@components/ui/TextLink";
 import { getDexById } from "@helpers/getDexById";
 import { MetaTags } from "@components/MetaTags";
 import { PageNavigation } from "@components/ui/PageNavigation";
-import { PageContent } from "@components/ui/PageContent";
 import { Export } from "@components/Export";
 
 interface DexPageProps {
@@ -19,7 +17,7 @@ const DexPage: FC<DexPageProps> = ({ dex }) => {
     <>
       <MetaTags title={dex.name} canonicalUri={`/dex/${dex.id}`} />
       <PageNavigation backHref="/" />
-      <PageContent>
+      <main className="page-content">
         <div className="flex justify-between">
           <Header>{dex.name}</Header>
           <div>
@@ -51,14 +49,14 @@ const DexPage: FC<DexPageProps> = ({ dex }) => {
                 <td className="text-left">{mon.indexNumber}</td>
                 <td>
                   <Link href={`/dex/${dex.id}/${mon.indexNumber}`}>
-                    <TextLink>{mon.name}</TextLink>
+                    <a className="text-link">{mon.name}</a>
                   </Link>
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
-      </PageContent>
+      </main>
     </>
   );
 };

@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import Link from "next/link";
-import { NavButton } from "./ui/NavButton";
 import { Dex } from "@data/types";
 
 export const MonNavigation: FC<{
@@ -18,28 +17,28 @@ export const MonNavigation: FC<{
   return (
     <nav className="flex justify-center text-xs text-center">
       {prev && (
-        <Link href={`/dex/${dex.id}/${prev.indexNumber}`} passHref>
-          <NavButton>
+        <Link href={`/dex/${dex.id}/${prev.indexNumber}`}>
+          <button className="mon-nav">
             &larr; #{prev.indexNumber}
             <br />
             {prev.name}
-          </NavButton>
+          </button>
         </Link>
       )}
       {mon && (
-        <NavButton aria-disabled>
+        <button className="mon-nav" disabled>
           #{mon.indexNumber}
           <br />
           {mon.name}
-        </NavButton>
+        </button>
       )}
       {next && (
-        <Link href={`/dex/${dex.id}/${next.indexNumber}`} passHref>
-          <NavButton>
+        <Link href={`/dex/${dex.id}/${next.indexNumber}`}>
+          <button className="mon-nav">
             #{next.indexNumber} &rarr;
             <br />
             {next.name}
-          </NavButton>
+          </button>
         </Link>
       )}
     </nav>
