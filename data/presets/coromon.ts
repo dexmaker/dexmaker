@@ -18,12 +18,12 @@ export const coromonDex: Dex = {
         { value: "Dark Magic", color: "blue" },
       ],
     },
-    { name: "HP", type: FieldType.NUMERIC, min: 1, max: 999 },
-    { name: "Attack", type: FieldType.NUMERIC, min: 1, max: 999 },
-    { name: "Defense", type: FieldType.NUMERIC, min: 1, max: 999 },
-    { name: "Special Attack", type: FieldType.NUMERIC, min: 1, max: 999 },
-    { name: "Special Defense", type: FieldType.NUMERIC, min: 1, max: 999 },
-    { name: "Speed", type: FieldType.NUMERIC, min: 1, max: 999 },
+    { name: "HP", type: FieldType.NUMERIC, min: 1, max: 500 },
+    { name: "Attack", type: FieldType.NUMERIC, min: 1, max: 500 },
+    { name: "Defense", type: FieldType.NUMERIC, min: 1, max: 500 },
+    { name: "Special Attack", type: FieldType.NUMERIC, min: 1, max: 500 },
+    { name: "Special Defense", type: FieldType.NUMERIC, min: 1, max: 500 },
+    { name: "Speed", type: FieldType.NUMERIC, min: 1, max: 500 },
   ],
   mons: [
     {
@@ -33,7 +33,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
         { type: FieldType.NUMERIC, name: "HP", value: 199 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 93 },
         { type: FieldType.NUMERIC, name: "Attack", value: 136 },
         { type: FieldType.NUMERIC, name: "Defense", value: 114 },
@@ -48,7 +47,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
         { type: FieldType.NUMERIC, name: "HP", value: 230 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 124 },
         { type: FieldType.NUMERIC, name: "Attack", value: 177 },
         { type: FieldType.NUMERIC, name: "Defense", value: 145 },
@@ -63,7 +61,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
         { type: FieldType.NUMERIC, name: "HP", value: 271 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 163 },
         { type: FieldType.NUMERIC, name: "Attack", value: 208 },
         { type: FieldType.NUMERIC, name: "Defense", value: 186 },
@@ -78,7 +75,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
         { type: FieldType.NUMERIC, name: "HP", value: 189 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 137 },
         { type: FieldType.NUMERIC, name: "Attack", value: 104 },
         { type: FieldType.NUMERIC, name: "Defense", value: 95 },
@@ -93,7 +89,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
         { type: FieldType.NUMERIC, name: "HP", value: 230 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 166 },
         { type: FieldType.NUMERIC, name: "Attack", value: 127 },
         { type: FieldType.NUMERIC, name: "Defense", value: 124 },
@@ -108,7 +103,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
         { type: FieldType.NUMERIC, name: "HP", value: 268 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 204 },
         { type: FieldType.NUMERIC, name: "Attack", value: 185 },
         { type: FieldType.NUMERIC, name: "Defense", value: 150 },
@@ -123,7 +117,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
         { type: FieldType.NUMERIC, name: "HP", value: 198 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 96 },
         { type: FieldType.NUMERIC, name: "Attack", value: 94 },
         { type: FieldType.NUMERIC, name: "Defense", value: 136 },
@@ -138,7 +131,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
         { type: FieldType.NUMERIC, name: "HP", value: 227 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 121 },
         { type: FieldType.NUMERIC, name: "Attack", value: 131 },
         { type: FieldType.NUMERIC, name: "Defense", value: 167 },
@@ -153,7 +145,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
         { type: FieldType.NUMERIC, name: "HP", value: 267 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 161 },
         { type: FieldType.NUMERIC, name: "Attack", value: 171 },
         { type: FieldType.NUMERIC, name: "Defense", value: 209 },
@@ -168,7 +159,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
         { type: FieldType.NUMERIC, name: "HP", value: 190 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 103 },
         { type: FieldType.NUMERIC, name: "Attack", value: 72 },
         { type: FieldType.NUMERIC, name: "Defense", value: 63 },
@@ -183,7 +173,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
         { type: FieldType.NUMERIC, name: "HP", value: 211 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 146 },
         { type: FieldType.NUMERIC, name: "Attack", value: 166 },
         { type: FieldType.NUMERIC, name: "Defense", value: 76 },
@@ -198,7 +187,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
         { type: FieldType.NUMERIC, name: "HP", value: 252 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 190 },
         { type: FieldType.NUMERIC, name: "Attack", value: 252 },
         { type: FieldType.NUMERIC, name: "Defense", value: 96 },
@@ -213,7 +201,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
         { type: FieldType.NUMERIC, name: "HP", value: 187 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 115 },
         { type: FieldType.NUMERIC, name: "Attack", value: 96 },
         { type: FieldType.NUMERIC, name: "Defense", value: 84 },
@@ -228,7 +215,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
         { type: FieldType.NUMERIC, name: "HP", value: 233 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 157 },
         { type: FieldType.NUMERIC, name: "Attack", value: 133 },
         { type: FieldType.NUMERIC, name: "Defense", value: 117 },
@@ -243,7 +229,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
         { type: FieldType.NUMERIC, name: "HP", value: 281 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 213 },
         { type: FieldType.NUMERIC, name: "Attack", value: 167 },
         { type: FieldType.NUMERIC, name: "Defense", value: 153 },
@@ -258,7 +243,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
         { type: FieldType.NUMERIC, name: "HP", value: 190 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 129 },
         { type: FieldType.NUMERIC, name: "Attack", value: 137 },
         { type: FieldType.NUMERIC, name: "Defense", value: 93 },
@@ -273,7 +257,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
         { type: FieldType.NUMERIC, name: "HP", value: 251 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 193 },
         { type: FieldType.NUMERIC, name: "Attack", value: 218 },
         { type: FieldType.NUMERIC, name: "Defense", value: 158 },
@@ -288,7 +271,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
         { type: FieldType.NUMERIC, name: "HP", value: 201 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 137 },
         { type: FieldType.NUMERIC, name: "Attack", value: 124 },
         { type: FieldType.NUMERIC, name: "Defense", value: 64 },
@@ -303,7 +285,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
         { type: FieldType.NUMERIC, name: "HP", value: 271 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 202 },
         { type: FieldType.NUMERIC, name: "Attack", value: 193 },
         { type: FieldType.NUMERIC, name: "Defense", value: 103 },
@@ -318,7 +299,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
         { type: FieldType.NUMERIC, name: "HP", value: 177 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 64 },
         { type: FieldType.NUMERIC, name: "Attack", value: 166 },
         { type: FieldType.NUMERIC, name: "Defense", value: 208 },
@@ -333,7 +313,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
         { type: FieldType.NUMERIC, name: "HP", value: 235 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 87 },
         { type: FieldType.NUMERIC, name: "Attack", value: 202 },
         { type: FieldType.NUMERIC, name: "Defense", value: 239 },
@@ -348,7 +327,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
         { type: FieldType.NUMERIC, name: "HP", value: 277 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 93 },
         { type: FieldType.NUMERIC, name: "Attack", value: 251 },
         { type: FieldType.NUMERIC, name: "Defense", value: 271 },
@@ -363,7 +341,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 230 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 132 },
         { type: FieldType.NUMERIC, name: "Attack", value: 148 },
         { type: FieldType.NUMERIC, name: "Defense", value: 126 },
@@ -378,7 +355,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 271 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 167 },
         { type: FieldType.NUMERIC, name: "Attack", value: 211 },
         { type: FieldType.NUMERIC, name: "Defense", value: 167 },
@@ -393,7 +369,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
         { type: FieldType.NUMERIC, name: "HP", value: 189 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 137 },
         { type: FieldType.NUMERIC, name: "Attack", value: 73 },
         { type: FieldType.NUMERIC, name: "Defense", value: 149 },
@@ -408,7 +383,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
         { type: FieldType.NUMERIC, name: "HP", value: 243 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 179 },
         { type: FieldType.NUMERIC, name: "Attack", value: 146 },
         { type: FieldType.NUMERIC, name: "Defense", value: 199 },
@@ -423,7 +397,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
         { type: FieldType.NUMERIC, name: "HP", value: 238 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 93 },
         { type: FieldType.NUMERIC, name: "Attack", value: 134 },
         { type: FieldType.NUMERIC, name: "Defense", value: 86 },
@@ -438,7 +411,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
         { type: FieldType.NUMERIC, name: "HP", value: 286 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 117 },
         { type: FieldType.NUMERIC, name: "Attack", value: 193 },
         { type: FieldType.NUMERIC, name: "Defense", value: 113 },
@@ -453,7 +425,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
         { type: FieldType.NUMERIC, name: "HP", value: 325 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 133 },
         { type: FieldType.NUMERIC, name: "Attack", value: 257 },
         { type: FieldType.NUMERIC, name: "Defense", value: 127 },
@@ -468,7 +439,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
         { type: FieldType.NUMERIC, name: "HP", value: 171 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 107 },
         { type: FieldType.NUMERIC, name: "Attack", value: 196 },
         { type: FieldType.NUMERIC, name: "Defense", value: 164 },
@@ -483,7 +453,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
         { type: FieldType.NUMERIC, name: "HP", value: 252 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 153 },
         { type: FieldType.NUMERIC, name: "Attack", value: 283 },
         { type: FieldType.NUMERIC, name: "Defense", value: 250 },
@@ -498,7 +467,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 208 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 85 },
         { type: FieldType.NUMERIC, name: "Attack", value: 156 },
         { type: FieldType.NUMERIC, name: "Defense", value: 73 },
@@ -513,7 +481,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 237 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 111 },
         { type: FieldType.NUMERIC, name: "Attack", value: 177 },
         { type: FieldType.NUMERIC, name: "Defense", value: 99 },
@@ -528,7 +495,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 267 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 147 },
         { type: FieldType.NUMERIC, name: "Attack", value: 235 },
         { type: FieldType.NUMERIC, name: "Defense", value: 116 },
@@ -543,7 +509,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
         { type: FieldType.NUMERIC, name: "HP", value: 217 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 72 },
         { type: FieldType.NUMERIC, name: "Attack", value: 83 },
         { type: FieldType.NUMERIC, name: "Defense", value: 84 },
@@ -558,7 +523,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
         { type: FieldType.NUMERIC, name: "HP", value: 251 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 95 },
         { type: FieldType.NUMERIC, name: "Attack", value: 115 },
         { type: FieldType.NUMERIC, name: "Defense", value: 113 },
@@ -573,7 +537,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
         { type: FieldType.NUMERIC, name: "HP", value: 290 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 107 },
         { type: FieldType.NUMERIC, name: "Attack", value: 167 },
         { type: FieldType.NUMERIC, name: "Defense", value: 175 },
@@ -588,7 +551,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
         { type: FieldType.NUMERIC, name: "HP", value: 167 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 165 },
         { type: FieldType.NUMERIC, name: "Attack", value: 74 },
         { type: FieldType.NUMERIC, name: "Defense", value: 65 },
@@ -603,7 +565,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
         { type: FieldType.NUMERIC, name: "HP", value: 198 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 196 },
         { type: FieldType.NUMERIC, name: "Attack", value: 103 },
         { type: FieldType.NUMERIC, name: "Defense", value: 97 },
@@ -618,7 +579,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
         { type: FieldType.NUMERIC, name: "HP", value: 229 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 228 },
         { type: FieldType.NUMERIC, name: "Attack", value: 135 },
         { type: FieldType.NUMERIC, name: "Defense", value: 126 },
@@ -633,7 +593,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
         { type: FieldType.NUMERIC, name: "HP", value: 250 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 51 },
         { type: FieldType.NUMERIC, name: "Attack", value: 84 },
         { type: FieldType.NUMERIC, name: "Defense", value: 101 },
@@ -648,7 +607,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
         { type: FieldType.NUMERIC, name: "HP", value: 289 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 89 },
         { type: FieldType.NUMERIC, name: "Attack", value: 126 },
         { type: FieldType.NUMERIC, name: "Defense", value: 142 },
@@ -663,7 +621,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
         { type: FieldType.NUMERIC, name: "HP", value: 328 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 123 },
         { type: FieldType.NUMERIC, name: "Attack", value: 167 },
         { type: FieldType.NUMERIC, name: "Defense", value: 174 },
@@ -678,7 +635,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
         { type: FieldType.NUMERIC, name: "HP", value: 200 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 98 },
         { type: FieldType.NUMERIC, name: "Attack", value: 123 },
         { type: FieldType.NUMERIC, name: "Defense", value: 83 },
@@ -693,7 +649,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
         { type: FieldType.NUMERIC, name: "HP", value: 200 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 98 },
         { type: FieldType.NUMERIC, name: "Attack", value: 123 },
         { type: FieldType.NUMERIC, name: "Defense", value: 83 },
@@ -708,7 +663,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
         { type: FieldType.NUMERIC, name: "HP", value: 261 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 159 },
         { type: FieldType.NUMERIC, name: "Attack", value: 237 },
         { type: FieldType.NUMERIC, name: "Defense", value: 134 },
@@ -723,7 +677,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
         { type: FieldType.NUMERIC, name: "HP", value: 163 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 94 },
         { type: FieldType.NUMERIC, name: "Attack", value: 76 },
         { type: FieldType.NUMERIC, name: "Defense", value: 143 },
@@ -738,7 +691,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
         { type: FieldType.NUMERIC, name: "HP", value: 214 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 149 },
         { type: FieldType.NUMERIC, name: "Attack", value: 125 },
         { type: FieldType.NUMERIC, name: "Defense", value: 193 },
@@ -753,7 +705,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 267 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 63 },
         { type: FieldType.NUMERIC, name: "Attack", value: 176 },
         { type: FieldType.NUMERIC, name: "Defense", value: 197 },
@@ -768,7 +719,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 306 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 83 },
         { type: FieldType.NUMERIC, name: "Attack", value: 293 },
         { type: FieldType.NUMERIC, name: "Defense", value: 271 },
@@ -783,7 +733,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
         { type: FieldType.NUMERIC, name: "HP", value: 180 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 125 },
         { type: FieldType.NUMERIC, name: "Attack", value: 88 },
         { type: FieldType.NUMERIC, name: "Defense", value: 103 },
@@ -798,7 +747,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
         { type: FieldType.NUMERIC, name: "HP", value: 231 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 153 },
         { type: FieldType.NUMERIC, name: "Attack", value: 143 },
         { type: FieldType.NUMERIC, name: "Defense", value: 119 },
@@ -813,7 +761,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
         { type: FieldType.NUMERIC, name: "HP", value: 283 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 169 },
         { type: FieldType.NUMERIC, name: "Attack", value: 231 },
         { type: FieldType.NUMERIC, name: "Defense", value: 164 },
@@ -828,7 +775,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 252 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 73 },
         { type: FieldType.NUMERIC, name: "Attack", value: 163 },
         { type: FieldType.NUMERIC, name: "Defense", value: 99 },
@@ -843,7 +789,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 261 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 95 },
         { type: FieldType.NUMERIC, name: "Attack", value: 207 },
         { type: FieldType.NUMERIC, name: "Defense", value: 146 },
@@ -858,7 +803,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 270 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 119 },
         { type: FieldType.NUMERIC, name: "Attack", value: 265 },
         { type: FieldType.NUMERIC, name: "Defense", value: 171 },
@@ -873,7 +817,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
         { type: FieldType.NUMERIC, name: "HP", value: 231 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 91 },
         { type: FieldType.NUMERIC, name: "Attack", value: 103 },
         { type: FieldType.NUMERIC, name: "Defense", value: 101 },
@@ -888,7 +831,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
         { type: FieldType.NUMERIC, name: "HP", value: 297 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 127 },
         { type: FieldType.NUMERIC, name: "Attack", value: 189 },
         { type: FieldType.NUMERIC, name: "Defense", value: 179 },
@@ -903,7 +845,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
         { type: FieldType.NUMERIC, name: "HP", value: 199 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 103 },
         { type: FieldType.NUMERIC, name: "Attack", value: 114 },
         { type: FieldType.NUMERIC, name: "Defense", value: 122 },
@@ -918,7 +859,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
         { type: FieldType.NUMERIC, name: "HP", value: 250 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 152 },
         { type: FieldType.NUMERIC, name: "Attack", value: 166 },
         { type: FieldType.NUMERIC, name: "Defense", value: 176 },
@@ -933,7 +873,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
         { type: FieldType.NUMERIC, name: "HP", value: 247 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 75 },
         { type: FieldType.NUMERIC, name: "Attack", value: 97 },
         { type: FieldType.NUMERIC, name: "Defense", value: 102 },
@@ -948,7 +887,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
         { type: FieldType.NUMERIC, name: "HP", value: 300 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 126 },
         { type: FieldType.NUMERIC, name: "Attack", value: 148 },
         { type: FieldType.NUMERIC, name: "Defense", value: 154 },
@@ -963,7 +901,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
         { type: FieldType.NUMERIC, name: "HP", value: 185 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 147 },
         { type: FieldType.NUMERIC, name: "Attack", value: 83 },
         { type: FieldType.NUMERIC, name: "Defense", value: 72 },
@@ -978,7 +915,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
         { type: FieldType.NUMERIC, name: "HP", value: 268 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 206 },
         { type: FieldType.NUMERIC, name: "Attack", value: 144 },
         { type: FieldType.NUMERIC, name: "Defense", value: 135 },
@@ -993,7 +929,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
         { type: FieldType.NUMERIC, name: "HP", value: 178 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 106 },
         { type: FieldType.NUMERIC, name: "Attack", value: 76 },
         { type: FieldType.NUMERIC, name: "Defense", value: 83 },
@@ -1008,7 +943,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
         { type: FieldType.NUMERIC, name: "HP", value: 217 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 165 },
         { type: FieldType.NUMERIC, name: "Attack", value: 95 },
         { type: FieldType.NUMERIC, name: "Defense", value: 102 },
@@ -1023,7 +957,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
         { type: FieldType.NUMERIC, name: "HP", value: 271 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 229 },
         { type: FieldType.NUMERIC, name: "Attack", value: 113 },
         { type: FieldType.NUMERIC, name: "Defense", value: 141 },
@@ -1038,7 +971,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
         { type: FieldType.NUMERIC, name: "HP", value: 207 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 84 },
         { type: FieldType.NUMERIC, name: "Attack", value: 93 },
         { type: FieldType.NUMERIC, name: "Defense", value: 113 },
@@ -1053,7 +985,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
         { type: FieldType.NUMERIC, name: "HP", value: 251 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 107 },
         { type: FieldType.NUMERIC, name: "Attack", value: 144 },
         { type: FieldType.NUMERIC, name: "Defense", value: 157 },
@@ -1068,7 +999,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Normal" },
         { type: FieldType.NUMERIC, name: "HP", value: 280 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 126 },
         { type: FieldType.NUMERIC, name: "Attack", value: 166 },
         { type: FieldType.NUMERIC, name: "Defense", value: 185 },
@@ -1083,7 +1013,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 174 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 72 },
         { type: FieldType.NUMERIC, name: "Attack", value: 147 },
         { type: FieldType.NUMERIC, name: "Defense", value: 213 },
@@ -1098,7 +1027,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 206 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 87 },
         { type: FieldType.NUMERIC, name: "Attack", value: 185 },
         { type: FieldType.NUMERIC, name: "Defense", value: 281 },
@@ -1113,7 +1041,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 235 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 103 },
         { type: FieldType.NUMERIC, name: "Attack", value: 199 },
         { type: FieldType.NUMERIC, name: "Defense", value: 364 },
@@ -1128,7 +1055,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
         { type: FieldType.NUMERIC, name: "HP", value: 187 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 186 },
         { type: FieldType.NUMERIC, name: "Attack", value: 101 },
         { type: FieldType.NUMERIC, name: "Defense", value: 83 },
@@ -1143,7 +1069,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
         { type: FieldType.NUMERIC, name: "HP", value: 247 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 186 },
         { type: FieldType.NUMERIC, name: "Attack", value: 163 },
         { type: FieldType.NUMERIC, name: "Defense", value: 99 },
@@ -1158,7 +1083,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
         { type: FieldType.NUMERIC, name: "HP", value: 287 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 147 },
         { type: FieldType.NUMERIC, name: "Attack", value: 193 },
         { type: FieldType.NUMERIC, name: "Defense", value: 199 },
@@ -1173,7 +1097,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 201 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 92 },
         { type: FieldType.NUMERIC, name: "Attack", value: 93 },
         { type: FieldType.NUMERIC, name: "Defense", value: 166 },
@@ -1188,7 +1111,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 253 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 109 },
         { type: FieldType.NUMERIC, name: "Attack", value: 146 },
         { type: FieldType.NUMERIC, name: "Defense", value: 228 },
@@ -1203,7 +1125,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 294 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 114 },
         { type: FieldType.NUMERIC, name: "Attack", value: 173 },
         { type: FieldType.NUMERIC, name: "Defense", value: 273 },
@@ -1218,7 +1139,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
         { type: FieldType.NUMERIC, name: "HP", value: 211 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 89 },
         { type: FieldType.NUMERIC, name: "Attack", value: 127 },
         { type: FieldType.NUMERIC, name: "Defense", value: 98 },
@@ -1233,7 +1153,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
         { type: FieldType.NUMERIC, name: "HP", value: 292 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 123 },
         { type: FieldType.NUMERIC, name: "Attack", value: 199 },
         { type: FieldType.NUMERIC, name: "Defense", value: 184 },
@@ -1248,7 +1167,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
         { type: FieldType.NUMERIC, name: "HP", value: 197 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 105 },
         { type: FieldType.NUMERIC, name: "Attack", value: 107 },
         { type: FieldType.NUMERIC, name: "Defense", value: 83 },
@@ -1263,7 +1181,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
         { type: FieldType.NUMERIC, name: "HP", value: 226 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 134 },
         { type: FieldType.NUMERIC, name: "Attack", value: 136 },
         { type: FieldType.NUMERIC, name: "Defense", value: 121 },
@@ -1278,7 +1195,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
         { type: FieldType.NUMERIC, name: "HP", value: 267 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 187 },
         { type: FieldType.NUMERIC, name: "Attack", value: 190 },
         { type: FieldType.NUMERIC, name: "Defense", value: 143 },
@@ -1293,7 +1209,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
         { type: FieldType.NUMERIC, name: "HP", value: 158 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 83 },
         { type: FieldType.NUMERIC, name: "Attack", value: 146 },
         { type: FieldType.NUMERIC, name: "Defense", value: 147 },
@@ -1308,7 +1223,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Electric" },
         { type: FieldType.NUMERIC, name: "HP", value: 242 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 122 },
         { type: FieldType.NUMERIC, name: "Attack", value: 220 },
         { type: FieldType.NUMERIC, name: "Defense", value: 209 },
@@ -1323,7 +1237,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
         { type: FieldType.NUMERIC, name: "HP", value: 190 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 126 },
         { type: FieldType.NUMERIC, name: "Attack", value: 93 },
         { type: FieldType.NUMERIC, name: "Defense", value: 146 },
@@ -1338,7 +1251,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
         { type: FieldType.NUMERIC, name: "HP", value: 252 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 188 },
         { type: FieldType.NUMERIC, name: "Attack", value: 152 },
         { type: FieldType.NUMERIC, name: "Defense", value: 209 },
@@ -1353,7 +1265,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
         { type: FieldType.NUMERIC, name: "HP", value: 157 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 186 },
         { type: FieldType.NUMERIC, name: "Attack", value: 44 },
         { type: FieldType.NUMERIC, name: "Defense", value: 36 },
@@ -1368,7 +1279,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
         { type: FieldType.NUMERIC, name: "HP", value: 191 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 219 },
         { type: FieldType.NUMERIC, name: "Attack", value: 73 },
         { type: FieldType.NUMERIC, name: "Defense", value: 89 },
@@ -1383,7 +1293,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
         { type: FieldType.NUMERIC, name: "HP", value: 197 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 73 },
         { type: FieldType.NUMERIC, name: "Attack", value: 71 },
         { type: FieldType.NUMERIC, name: "Defense", value: 116 },
@@ -1398,7 +1307,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
         { type: FieldType.NUMERIC, name: "HP", value: 277 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 89 },
         { type: FieldType.NUMERIC, name: "Attack", value: 147 },
         { type: FieldType.NUMERIC, name: "Defense", value: 259 },
@@ -1413,7 +1321,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 177 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 73 },
         { type: FieldType.NUMERIC, name: "Attack", value: 77 },
         { type: FieldType.NUMERIC, name: "Defense", value: 73 },
@@ -1428,7 +1335,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 201 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 107 },
         { type: FieldType.NUMERIC, name: "Attack", value: 193 },
         { type: FieldType.NUMERIC, name: "Defense", value: 177 },
@@ -1443,7 +1349,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Sand" },
         { type: FieldType.NUMERIC, name: "HP", value: 269 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 129 },
         { type: FieldType.NUMERIC, name: "Attack", value: 247 },
         { type: FieldType.NUMERIC, name: "Defense", value: 193 },
@@ -1458,7 +1363,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
         { type: FieldType.NUMERIC, name: "HP", value: 183 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 143 },
         { type: FieldType.NUMERIC, name: "Attack", value: 123 },
         { type: FieldType.NUMERIC, name: "Defense", value: 79 },
@@ -1473,7 +1377,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
         { type: FieldType.NUMERIC, name: "HP", value: 301 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 166 },
         { type: FieldType.NUMERIC, name: "Attack", value: 246 },
         { type: FieldType.NUMERIC, name: "Defense", value: 168 },
@@ -1488,7 +1391,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
         { type: FieldType.NUMERIC, name: "HP", value: 180 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 145 },
         { type: FieldType.NUMERIC, name: "Attack", value: 127 },
         { type: FieldType.NUMERIC, name: "Defense", value: 66 },
@@ -1503,7 +1405,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Fire" },
         { type: FieldType.NUMERIC, name: "HP", value: 241 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 217 },
         { type: FieldType.NUMERIC, name: "Attack", value: 209 },
         { type: FieldType.NUMERIC, name: "Defense", value: 143 },
@@ -1518,7 +1419,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
         { type: FieldType.NUMERIC, name: "HP", value: 167 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 89 },
         { type: FieldType.NUMERIC, name: "Attack", value: 53 },
         { type: FieldType.NUMERIC, name: "Defense", value: 51 },
@@ -1533,7 +1433,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
         { type: FieldType.NUMERIC, name: "HP", value: 195 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 97 },
         { type: FieldType.NUMERIC, name: "Attack", value: 70 },
         { type: FieldType.NUMERIC, name: "Defense", value: 109 },
@@ -1548,7 +1447,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ice" },
         { type: FieldType.NUMERIC, name: "HP", value: 259 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 166 },
         { type: FieldType.NUMERIC, name: "Attack", value: 144 },
         { type: FieldType.NUMERIC, name: "Defense", value: 133 },
@@ -1563,7 +1461,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
         { type: FieldType.NUMERIC, name: "HP", value: 257 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 54 },
         { type: FieldType.NUMERIC, name: "Attack", value: 126 },
         { type: FieldType.NUMERIC, name: "Defense", value: 63 },
@@ -1578,7 +1475,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Ghost" },
         { type: FieldType.NUMERIC, name: "HP", value: 346 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 104 },
         { type: FieldType.NUMERIC, name: "Attack", value: 245 },
         { type: FieldType.NUMERIC, name: "Defense", value: 112 },
@@ -1593,7 +1489,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
         { type: FieldType.NUMERIC, name: "HP", value: 167 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 83 },
         { type: FieldType.NUMERIC, name: "Attack", value: 137 },
         { type: FieldType.NUMERIC, name: "Defense", value: 207 },
@@ -1608,7 +1503,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Water" },
         { type: FieldType.NUMERIC, name: "HP", value: 226 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 142 },
         { type: FieldType.NUMERIC, name: "Attack", value: 203 },
         { type: FieldType.NUMERIC, name: "Defense", value: 349 },
@@ -1623,7 +1517,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Dark Magic" },
         { type: FieldType.NUMERIC, name: "HP", value: 252 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 153 },
         { type: FieldType.NUMERIC, name: "Attack", value: 299 },
         { type: FieldType.NUMERIC, name: "Defense", value: 277 },
@@ -1638,7 +1531,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Dark Magic" },
         { type: FieldType.NUMERIC, name: "HP", value: 178 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 106 },
         { type: FieldType.NUMERIC, name: "Attack", value: 76 },
         { type: FieldType.NUMERIC, name: "Defense", value: 103 },
@@ -1653,7 +1545,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Dark Magic" },
         { type: FieldType.NUMERIC, name: "HP", value: 217 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 165 },
         { type: FieldType.NUMERIC, name: "Attack", value: 95 },
         { type: FieldType.NUMERIC, name: "Defense", value: 136 },
@@ -1668,7 +1559,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Dark Magic" },
         { type: FieldType.NUMERIC, name: "HP", value: 271 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 229 },
         { type: FieldType.NUMERIC, name: "Attack", value: 113 },
         { type: FieldType.NUMERIC, name: "Defense", value: 191 },
@@ -1683,7 +1573,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Dark Magic" },
         { type: FieldType.NUMERIC, name: "HP", value: 206 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 87 },
         { type: FieldType.NUMERIC, name: "Attack", value: 185 },
         { type: FieldType.NUMERIC, name: "Defense", value: 301 },
@@ -1698,7 +1587,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Dark Magic" },
         { type: FieldType.NUMERIC, name: "HP", value: 235 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 103 },
         { type: FieldType.NUMERIC, name: "Attack", value: 199 },
         { type: FieldType.NUMERIC, name: "Defense", value: 365 },
@@ -1713,7 +1601,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Dark Magic" },
         { type: FieldType.NUMERIC, name: "HP", value: 199 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 103 },
         { type: FieldType.NUMERIC, name: "Attack", value: 114 },
         { type: FieldType.NUMERIC, name: "Defense", value: 142 },
@@ -1728,7 +1615,6 @@ export const coromonDex: Dex = {
       fields: [
         { type: FieldType.ENUM, name: "Type", value: "Dark Magic" },
         { type: FieldType.NUMERIC, name: "HP", value: 250 },
-        { type: FieldType.NUMERIC, name: "SP", value: 54 },
         { type: FieldType.NUMERIC, name: "Speed", value: 152 },
         { type: FieldType.NUMERIC, name: "Attack", value: 166 },
         { type: FieldType.NUMERIC, name: "Defense", value: 196 },
