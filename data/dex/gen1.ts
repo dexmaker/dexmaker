@@ -15,7 +15,7 @@ const gen1dex: Dex<Gen1Stat, Gen1Type> = {
     name: "",
     indexNumber: 0,
     stats: { HP: 0, Attack: 0, Defense: 0, Special: 0, Speed: 0 },
-    types: [null, null],
+    types: [PokemonType.NORMAL],
   },
   mons: [
     {

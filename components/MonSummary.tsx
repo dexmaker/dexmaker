@@ -23,7 +23,7 @@ export const MonSummary: FC<{
           </Title>
           <div>
             <TypeBadge type={mon.types[0]} />
-            {mon.types.length > 1 && <TypeBadge type={mon.types[1]} />}
+            {mon.types[1] && <TypeBadge type={mon.types[1]} />}
           </div>
         </div>
       </div>

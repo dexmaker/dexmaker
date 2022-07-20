@@ -25,7 +25,7 @@ const gen2dex: Dex<Gen2Stat, Gen2Type> = {
       "Sp. Defense": 0,
       Speed: 0,
     },
-    types: [null, null],
+    types: [PokemonType.NORMAL],
   },
   mons: [
     {

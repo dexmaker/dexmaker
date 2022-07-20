@@ -8,8 +8,10 @@ export const MonNavigation: FC<{
   current: number;
 }> = ({ dex, current }) => {
   const mon = dex.mons.find((mon) => mon.indexNumber === current);
-  const prev = dex.mons.indexOf(mon) > 0 && dex.mons[dex.mons.indexOf(mon) - 1];
+  const prev =
+    mon && dex.mons.indexOf(mon) > 0 && dex.mons[dex.mons.indexOf(mon) - 1];
   const next =
+    mon &&
     dex.mons.indexOf(mon) < dex.mons.length - 1 &&
     dex.mons[dex.mons.indexOf(mon) + 1];
 
@@ -24,11 +26,13 @@ export const MonNavigation: FC<{
           </NavButton>
         </Link>
       )}
-      <NavButton aria-disabled>
-        #{mon.indexNumber}
-        <br />
-        {mon.name}
-      </NavButton>
+      {mon && (
+        <NavButton aria-disabled>
+          #{mon.indexNumber}
+          <br />
+          {mon.name}
+        </NavButton>
+      )}
       {next && (
         <Link href={`/dex/${dex.id}/${next.indexNumber}`} passHref>
           <NavButton>
