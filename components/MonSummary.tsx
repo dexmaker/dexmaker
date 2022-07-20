@@ -18,7 +18,7 @@ const MonFields: FC<{ fieldRules: FieldRule[]; mon: Mon }> = ({
       <tbody>
         {zipped.map(({ fieldRule, field }) => (
           <tr key={fieldRule.name}>
-            <td className="whitespace-nowrap">{fieldRule.name}</td>
+            <td className="whitespace-nowrap pr-3">{fieldRule.name}</td>
             {fieldRule.type === FieldType.NUMERIC &&
               field?.type === FieldType.NUMERIC && (
                 <>
