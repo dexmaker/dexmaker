@@ -9,6 +9,7 @@ module.exports = {
       link: "#34c",
       black: "black",
       gray: "gray",
+      white: "white",
     },
   },
   plugins: [],

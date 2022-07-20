@@ -8,6 +8,7 @@ import { getDexById } from "@helpers/getDexById";
 import { MetaTags } from "@components/MetaTags";
 import { PageNavigation } from "@components/ui/PageNavigation";
 import { PageContent } from "@components/ui/PageContent";
+import { Export } from "@components/Export";
 
 interface DexPageProps {
   dex: Dex;
@@ -19,7 +20,12 @@ const DexPage: FC<DexPageProps> = ({ dex }) => {
       <MetaTags title={dex.name} canonicalUri={`/dex/${dex.id}`} />
       <PageNavigation backHref="/" />
       <PageContent>
-        <Header>{dex.name}</Header>
+        <div className="flex justify-between">
+          <Header>{dex.name}</Header>
+          <div>
+            <Export dex={dex} />
+          </div>
+        </div>
         <table className="table-fixed overflow-x-auto">
           <thead>
             <tr>

@@ -11,3 +11,9 @@ html {
   font-family: pkmn;
   line-height: 2em;
 }
+
+@layer components {
+  .btn {
+    @apply text-xs p-2 m-1 border rounded-sm cursor-pointer active:bg-gray active:text-white;
+  }
+}
