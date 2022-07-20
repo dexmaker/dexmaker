@@ -2,10 +2,10 @@ import { GetServerSideProps } from "next";
 import React, { FC } from "react";
 import Link from "next/link";
 import { Dex } from "@data/types";
-import { dexes } from "@data/dex";
 import { TypeBadge } from "@components/TypeBadge";
 import { Title } from "@components/ui/Title";
 import { TextLink } from "@components/ui/TextLink";
+import { getDexById } from "@helpers/getDexById";
 
 interface DexPageProps {
   dex: Dex;
@@ -34,7 +34,7 @@ const DexPage: FC<DexPageProps> = ({ dex }) => {
               </td>
               <td>
                 <TypeBadge type={mon.types[0]} />
-                {mon.types.length > 1 && <TypeBadge type={mon.types[1]} />}
+                {mon.types[1] && <TypeBadge type={mon.types[1]} />}
               </td>
             </tr>
           ))}
@@ -49,14 +49,14 @@ export default DexPage;
 export const getServerSideProps: GetServerSideProps<DexPageProps> = async (
   req
 ) => {
-  const dex: Dex = dexes.find((dex) => dex.id === Number(req.params.dex));
-  if (!dex) {
+  const dexResult = getDexById(Number(req.params?.dex));
+  if (!dexResult.found) {
     return { notFound: true };
   }
 
   return {
     props: {
-      dex,
+      dex: dexResult.data,
     },
   };
 };

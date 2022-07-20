@@ -2,10 +2,10 @@ import { GetServerSideProps } from "next";
 import React, { FC } from "react";
 import Link from "next/link";
 import { Dex, Mon } from "@data/types";
-import { dexes } from "@data/dex";
 import { MonSummary } from "@components/MonSummary";
 import { TextLink } from "@components/ui/TextLink";
 import { MonNavigation } from "@components/MonNavigation";
+import { getMon } from "@helpers/getMon";
 
 interface MonPageProps {
   dex: Dex;
@@ -35,19 +35,10 @@ export default MonPage;
 export const getServerSideProps: GetServerSideProps<MonPageProps> = async (
   req
 ) => {
-  const dex: Dex = dexes.find((dex) => dex.id === Number(req.params.dex));
-  if (!dex) {
-    return { notFound: true };
-  }
+  const result = getMon(Number(req.params?.dex), Number(req.params?.mon));
+  if (!result.found) return { notFound: true };
 
-  dex.mons.sort((a, b) => a.indexNumber - b.indexNumber);
-  const mon = dex.mons.find(
-    (mon) => mon.indexNumber === Number(req.params.mon)
-  );
-
-  if (!mon) {
-    return { notFound: true };
-  }
+  const { dex, mon } = result.data;
 
   return {
     props: {

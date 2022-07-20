@@ -19,11 +19,13 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": ".",
+    "strictNullChecks": true,
     "paths": {
       "@pages/*": ["./pages/*"],
       "@components/*": ["./components/*"],
       "@styles/*": ["./styles/*"],
-      "@data/*": ["./data/*"]
+      "@data/*": ["./data/*"],
+      "@helpers/*": ["./helpers/*"]
     }
   },
   "include": [
