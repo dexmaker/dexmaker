@@ -5,7 +5,8 @@ import { getDexes } from "@helpers/getDexes";
 import { Dex } from "@data/types";
 import { TextLink } from "@components/ui/TextLink";
 import { MetaTags } from "@components/MetaTags";
-import { Title } from "@components/ui/Title";
+import { Header } from "@components/ui/Header";
+import { PageContent } from "@components/ui/PageContent";
 
 interface HomePageProps {
   dexes: Dex[];
@@ -15,10 +16,8 @@ const HomePage: FC<HomePageProps> = ({ dexes }) => {
   return (
     <div className="w-3xl mx-auto">
       <MetaTags title="View dexes" canonicalUri="/" />
-      <header>
-        <Title>DexMaker</Title>
-      </header>
-      <main>
+      <PageContent>
+        <Header>DexMaker</Header>
         <ul>
           {dexes.map((dex) => (
             <li key={dex.id}>
@@ -30,7 +29,7 @@ const HomePage: FC<HomePageProps> = ({ dexes }) => {
             </li>
           ))}
         </ul>
-      </main>
+      </PageContent>
     </div>
   );
 };

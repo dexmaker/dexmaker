@@ -10,15 +10,17 @@ const siteDescription =
   "Build and hack fictional monster encyclopedias for ROM hacks, theorymonning and more!";
 
 export const MetaTags: FC<MetaTagsProps> = ({ title, canonicalUri }) => {
+  const composedTitle = `${title} | DexMaker`;
+
   return (
     <Head>
-      <title>{title} | DexMaker</title>
+      <title>{composedTitle}</title>
       <meta charSet="utf-8" />
       <meta name="description" content={siteDescription} />
       <meta name="robots" content="all" />
       <meta name="google" content="nositelinkssearchbox" key="sitelinks" />
       <meta name="google" content="notranslate" key="notranslate" />
-      <meta property="og:title" content={`${title} | DexMaker`} />
+      <meta property="og:title" content={composedTitle} />
       <meta property="og:description" content={siteDescription} />
       <meta property="og:type" content="website" />
       <meta

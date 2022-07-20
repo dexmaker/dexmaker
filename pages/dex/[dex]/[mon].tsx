@@ -1,12 +1,12 @@
 import { GetServerSideProps } from "next";
 import React, { FC } from "react";
-import Link from "next/link";
 import { Dex, Mon } from "@data/types";
 import { MonSummary } from "@components/MonSummary";
-import { TextLink } from "@components/ui/TextLink";
 import { MonNavigation } from "@components/MonNavigation";
 import { getMon } from "@helpers/getMon";
 import { MetaTags } from "@components/MetaTags";
+import { PageNavigation } from "@components/ui/PageNavigation";
+import { PageContent } from "@components/ui/PageContent";
 
 interface MonPageProps {
   dex: Dex;
@@ -20,17 +20,13 @@ const MonPage: FC<MonPageProps> = ({ dex, mon }) => {
         title={mon.name}
         canonicalUri={`/dex/${dex.id}/${mon.indexNumber}`}
       />
-      <nav>
-        <TextLink>
-          <Link href={`/dex/${dex.id}`}>
-            <a>Back</a>
-          </Link>
-        </TextLink>
-      </nav>
-      <div className="max-w-2xl mx-auto">
-        <MonSummary dex={dex} mon={mon} />
-        <MonNavigation dex={dex} current={mon.indexNumber} />
-      </div>
+      <PageNavigation backHref={`/dex/${dex.id}`} />
+      <PageContent>
+        <div className="max-w-2xl mx-auto">
+          <MonSummary dex={dex} mon={mon} />
+          <MonNavigation dex={dex} current={mon.indexNumber} />
+        </div>
+      </PageContent>
     </>
   );
 };

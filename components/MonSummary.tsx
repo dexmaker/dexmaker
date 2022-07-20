@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Badge } from "./Badge";
 import { StatGauge } from "./StatGauge";
-import { Title } from "./ui/Title";
+import { Header } from "./ui/Header";
 import { Dex, FieldRule, FieldType, Mon } from "@data/types";
 
 const MonFields: FC<{ fieldRules: FieldRule[]; mon: Mon }> = ({
@@ -72,9 +72,9 @@ export const MonSummary: FC<{
           )}
         </div>
         <div className="flex flex-col">
-          <Title>
+          <Header>
             #{mon.indexNumber}: {mon.name}
-          </Title>
+          </Header>
         </div>
       </div>
       <MonFields fieldRules={dex.fields} mon={mon} />
