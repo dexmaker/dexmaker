@@ -26,7 +26,7 @@ const monTypes: EnumFieldOptions = [
 
 const gen1dex: Dex = {
   id: 1,
-  name: "RBY",
+  name: "Pokémon R/B/Y",
   fields: [
     {
       name: "Type1",
