@@ -1,4 +1,4 @@
-import React, { FC, useMemo } from "react";
+import { FC, useMemo } from "react";
 import { Dex } from "@data/types";
 
 export const Export: FC<{ dex: Dex }> = ({ dex }) => {

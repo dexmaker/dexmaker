@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { GetServerSideProps } from "next";
 import Link from "next/link";
 import { getDexes } from "@helpers/getDexes";

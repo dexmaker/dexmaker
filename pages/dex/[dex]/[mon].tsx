@@ -1,5 +1,5 @@
 import { GetServerSideProps } from "next";
-import React, { FC } from "react";
+import { FC } from "react";
 import { Dex, Mon } from "@data/types";
 import { MonSummary } from "@components/MonSummary";
 import { MonNavigation } from "@components/MonNavigation";

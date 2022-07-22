@@ -1,5 +1,5 @@
 import { GetServerSideProps } from "next";
-import React, { FC } from "react";
+import { FC } from "react";
 import Link from "next/link";
 import { Dex } from "@data/types";
 import { Header } from "@components/ui/Header";

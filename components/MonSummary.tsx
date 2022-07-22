@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { Badge } from "./Badge";
 import { StatGauge } from "./StatGauge";
 import { Header } from "./ui/Header";

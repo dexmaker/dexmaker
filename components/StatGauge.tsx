@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React, { FC } from "react";
+import { FC } from "react";
 
 const toHue = (n: number, min: number, max: number) =>
   ((n - min) / (max - min)) * 180;
