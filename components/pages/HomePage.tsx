@@ -1,16 +1,14 @@
-import { FC } from "react";
-import { GetServerSideProps } from "next";
 import Link from "next/link";
-import { getDexes } from "@helpers/getDexes";
-import { Dex } from "@data/types";
+import { FC } from "react";
 import { MetaTags } from "@components/MetaTags";
 import { Header } from "@components/ui/Header";
+import { Dex } from "@data/types";
 
-interface HomePageProps {
+export interface HomePageProps {
   dexes: Dex[];
 }
 
-const HomePage: FC<HomePageProps> = ({ dexes }) => {
+export const HomePage: FC<HomePageProps> = ({ dexes }) => {
   return (
     <div className="w-3xl mx-auto">
       <MetaTags title="View dexes" canonicalUri="/" />
@@ -28,12 +26,4 @@ const HomePage: FC<HomePageProps> = ({ dexes }) => {
       </main>
     </div>
   );
-};
-
-export default HomePage;
-
-export const getServerSideProps: GetServerSideProps<
-  HomePageProps
-> = async () => {
-  return { props: { dexes: getDexes().data } };
 };

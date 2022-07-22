@@ -1,18 +1,16 @@
-import { GetServerSideProps } from "next";
-import { FC } from "react";
 import Link from "next/link";
-import { Dex } from "@data/types";
-import { Header } from "@components/ui/Header";
-import { getDexById } from "@helpers/getDexById";
-import { MetaTags } from "@components/MetaTags";
-import { PageNavigation } from "@components/ui/PageNavigation";
+import { FC } from "react";
 import { Export } from "@components/Export";
+import { MetaTags } from "@components/MetaTags";
+import { Header } from "@components/ui/Header";
+import { PageNavigation } from "@components/ui/PageNavigation";
+import { Dex } from "@data/types";
 
-interface DexPageProps {
+export interface DexPageProps {
   dex: Dex;
 }
 
-const DexPage: FC<DexPageProps> = ({ dex }) => {
+export const DexPage: FC<DexPageProps> = ({ dex }) => {
   return (
     <>
       <MetaTags title={dex.name} canonicalUri={`/dex/${dex.id}`} />
@@ -59,21 +57,4 @@ const DexPage: FC<DexPageProps> = ({ dex }) => {
       </main>
     </>
   );
-};
-
-export default DexPage;
-
-export const getServerSideProps: GetServerSideProps<DexPageProps> = async (
-  req
-) => {
-  const dexResult = getDexById(Number(req.params?.dex));
-  if (!dexResult.found) {
-    return { notFound: true };
-  }
-
-  return {
-    props: {
-      dex: dexResult.data,
-    },
-  };
 };
