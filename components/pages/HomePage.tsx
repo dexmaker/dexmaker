@@ -1,14 +1,16 @@
 import Link from 'next/link';
 import { FC } from 'react';
+import { useSelector } from 'react-redux';
 import { MetaTags } from '@components/MetaTags';
 import { Header } from '@components/ui/Header';
-import { Dex } from '@data/types';
+import { PagePropsWithState, RootState } from '@data/store';
+import { DexState } from '@data/store/reducers/dexReducer';
 
-export interface HomePageProps {
-  dexes: Dex[];
-}
+export type HomePageProps = PagePropsWithState;
 
-export const HomePage: FC<HomePageProps> = ({ dexes }) => {
+export const HomePage: FC<HomePageProps> = () => {
+  const { dexes } = useSelector<RootState, DexState>((state) => state.dex);
+
   return (
     <div className='w-3xl mx-auto'>
       <MetaTags title='View dexes' canonicalUri='/' />

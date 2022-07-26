@@ -1,9 +1,9 @@
 import { FC } from 'react';
 import Link from 'next/link';
-import { Dex } from '@data/types';
+import { Dex, WithId } from '@data/types';
 
 export const MonNavigation: FC<{
-  dex: Dex;
+  dex: WithId<Dex>;
   current: number;
 }> = ({ dex, current }) => {
   const mon = dex.mons.find((mon) => mon.indexNumber === current);

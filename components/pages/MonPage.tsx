@@ -1,27 +1,42 @@
-import { FC } from 'react';
+import { FC, useMemo } from 'react';
+import { useSelector } from 'react-redux';
 import { MetaTags } from '@components/MetaTags';
 import { MonNavigation } from '@components/MonNavigation';
 import { MonSummary } from '@components/MonSummary';
 import { PageNavigation } from '@components/ui/PageNavigation';
-import { Dex, Mon } from '@data/types';
+import { PagePropsWithState, RootState } from '@data/store';
+import { DexState } from '@data/store/reducers/dexReducer';
 
-export interface MonPageProps {
-  dex: Dex;
-  mon: Mon;
+export interface MonPageProps extends PagePropsWithState {
+  dexId: number;
+  monId: number;
 }
 
-export const MonPage: FC<MonPageProps> = ({ dex, mon }) => {
+export const MonPage: FC<MonPageProps> = ({ dexId, monId }) => {
+  const { dexes } = useSelector<RootState, DexState>((state) => state.dex);
+  const currentDex = useMemo(
+    () => dexes.find((dex) => dex.id === dexId),
+    [dexes, dexId]
+  );
+
+  const currentMon = useMemo(
+    () => currentDex?.mons.find((mon) => mon.indexNumber === monId),
+    [currentDex, monId]
+  );
+
+  if (!currentDex || !currentMon) return null;
+
   return (
     <>
       <MetaTags
-        title={mon.name}
-        canonicalUri={`/dex/${dex.id}/${mon.indexNumber}`}
+        title={currentMon.name}
+        canonicalUri={`/dex/${currentDex.id}/${currentMon.indexNumber}`}
       />
-      <PageNavigation backHref={`/dex/${dex.id}`} />
+      <PageNavigation backHref={`/dex/${currentDex.id}`} />
       <main className='page-content'>
         <div className='max-w-2xl mx-auto'>
-          <MonSummary dex={dex} mon={mon} />
-          <MonNavigation dex={dex} current={mon.indexNumber} />
+          <MonSummary dex={currentDex} mon={currentMon} />
+          <MonNavigation dex={currentDex} current={currentMon.indexNumber} />
         </div>
       </main>
     </>
