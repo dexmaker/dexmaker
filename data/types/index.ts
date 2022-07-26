@@ -5,3 +5,4 @@ export type { Field } from "./Field";
 export type { FieldRule } from "./FieldRule";
 export { FieldType } from "./FieldType";
 export { PokemonType } from "./PokemonType";
+export type { WithId } from "./WithId";

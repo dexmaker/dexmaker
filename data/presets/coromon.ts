@@ -1,7 +1,6 @@
 import { Dex, FieldType } from "@data/types";
 
 export const coromonDex: Dex = {
-  id: 2,
   name: "Coromon",
   fields: [
     {

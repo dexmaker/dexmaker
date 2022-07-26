@@ -1,3 +1,3 @@
 import "@styles/globals.css";
 
-export { default } from "next/app";
+export { AppComponent as default } from "@components/pages/AppComponent";

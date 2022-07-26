@@ -1,7 +1,7 @@
 import { dexes } from "@data/presets";
-import { Dex, QueryResult } from "@data/types";
+import { Dex, QueryResult, WithId } from "@data/types";
 
-export const getDexById = (id: number): QueryResult<Dex> => {
+export const getDexById = (id: number): QueryResult<WithId<Dex>> => {
   const dex = dexes.find((dex) => dex.id === id);
   if (!dex) return { found: false };
 

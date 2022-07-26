@@ -1,25 +1,40 @@
 import Link from "next/link";
-import { FC } from "react";
+import { FC, useMemo } from "react";
+import { useSelector } from "react-redux";
 import { Export } from "@components/Export";
 import { MetaTags } from "@components/MetaTags";
 import { Header } from "@components/ui/Header";
 import { PageNavigation } from "@components/ui/PageNavigation";
-import { Dex } from "@data/types";
+import { PagePropsWithState, RootState } from "@data/store";
+import { DexState } from "@data/store/reducers/dexReducer";
 
-export interface DexPageProps {
-  dex: Dex;
+export interface DexPageProps extends PagePropsWithState {
+  dexId: number;
 }
 
-export const DexPage: FC<DexPageProps> = ({ dex }) => {
+export const DexPage: FC<DexPageProps> = ({ dexId }) => {
+  const { dexes } = useSelector<RootState, DexState>((state) => state.dex);
+  const currentDex = useMemo(
+    () => dexes.find((dex) => dex.id === dexId),
+    [dexes, dexId]
+  );
+
+  if (!currentDex) {
+    return null;
+  }
+
   return (
     <>
-      <MetaTags title={dex.name} canonicalUri={`/dex/${dex.id}`} />
+      <MetaTags
+        title={currentDex.name}
+        canonicalUri={`/dex/${currentDex.id}`}
+      />
       <PageNavigation backHref="/" />
       <main className="page-content">
         <div className="flex justify-between">
-          <Header>{dex.name}</Header>
+          <Header>{currentDex.name}</Header>
           <div>
-            <Export dex={dex} />
+            <Export dex={currentDex} />
           </div>
         </div>
         <table className="table-fixed overflow-x-auto">
@@ -31,7 +46,7 @@ export const DexPage: FC<DexPageProps> = ({ dex }) => {
             </tr>
           </thead>
           <tbody>
-            {dex.mons.map((mon) => (
+            {currentDex.mons.map((mon) => (
               <tr key={mon.indexNumber}>
                 <td>
                   {mon.spriteUrl && (
@@ -46,7 +61,7 @@ export const DexPage: FC<DexPageProps> = ({ dex }) => {
                 </td>
                 <td className="text-left">{mon.indexNumber}</td>
                 <td>
-                  <Link href={`/dex/${dex.id}/${mon.indexNumber}`}>
+                  <Link href={`/dex/${currentDex.id}/${mon.indexNumber}`}>
                     <a className="text-link">{mon.name}</a>
                   </Link>
                 </td>
