@@ -1,5 +1,5 @@
-import { getDexById } from "./getDexById";
-import { Dex, Mon, QueryResult } from "@data/types";
+import { getDexById } from './getDexById';
+import { Dex, Mon, QueryResult } from '@data/types';
 
 export const getMon = (
   dexId: number,

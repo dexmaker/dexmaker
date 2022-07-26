@@ -1,6 +1,6 @@
-import { GetServerSideProps } from "next";
-import { DexPage, DexPageProps } from "@components/pages/DexPage";
-import { dexes } from "@data/presets";
+import { GetServerSideProps } from 'next';
+import { DexPage, DexPageProps } from '@components/pages/DexPage';
+import { dexes } from '@data/presets';
 
 export default DexPage;
 

@@ -1,5 +1,5 @@
-import { Field } from "./Field";
-import { FieldType } from "./FieldType";
+import { Field } from './Field';
+import { FieldType } from './FieldType';
 
 export interface Mon {
   name: string;

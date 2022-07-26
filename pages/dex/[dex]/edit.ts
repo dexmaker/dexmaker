@@ -1,6 +1,6 @@
-import { GetServerSideProps } from "next";
-import { EditPage, EditPageProps } from "@components/pages/EditPage";
-import { dexes } from "@data/presets";
+import { GetServerSideProps } from 'next';
+import { EditPage, EditPageProps } from '@components/pages/EditPage';
+import { dexes } from '@data/presets';
 
 export default EditPage;
 

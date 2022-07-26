@@ -5,8 +5,8 @@ import {
   configureStore,
   PreloadedState,
   ThunkDispatch,
-} from "@reduxjs/toolkit";
-import { dexReducer, DexState } from "./reducers/dexReducer";
+} from '@reduxjs/toolkit';
+import { dexReducer, DexState } from './reducers/dexReducer';
 
 const reducer = combineReducers({ dex: dexReducer });
 

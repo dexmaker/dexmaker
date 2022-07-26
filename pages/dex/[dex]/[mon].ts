@@ -1,6 +1,6 @@
-import { GetServerSideProps } from "next";
-import { getMon } from "@helpers/getMon";
-import { MonPage, MonPageProps } from "@components/pages/MonPage";
+import { GetServerSideProps } from 'next';
+import { getMon } from '@helpers/getMon';
+import { MonPage, MonPageProps } from '@components/pages/MonPage';
 
 export default MonPage;
 

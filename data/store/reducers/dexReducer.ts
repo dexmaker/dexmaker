@@ -2,9 +2,9 @@ import {
   createAction,
   createAsyncThunk,
   createReducer,
-} from "@reduxjs/toolkit";
-import { Dex, WithId } from "@data/types";
-import { dexes } from "@data/presets";
+} from '@reduxjs/toolkit';
+import { Dex, WithId } from '@data/types';
+import { dexes } from '@data/presets';
 
 export interface DexState {
   dexes: WithId<Dex>[];
@@ -14,17 +14,17 @@ const initialState: DexState = {
   dexes: [],
 };
 
-export const setDexes = createAction<WithId<Dex>[]>("setDexes");
+export const setDexes = createAction<WithId<Dex>[]>('setDexes');
 
 export const setDexName = createAsyncThunk(
-  "setName",
+  'setName',
   async ({ dexId, name }: { dexId: number; name: string }) => {
     const dex = dexes.find((dex) => dex.id === dexId);
-    if (!dex) throw new Error("Dex not found");
+    if (!dex) throw new Error('Dex not found');
 
     dex.name = name;
 
-    localStorage.setItem("dexes", JSON.stringify(dexes));
+    localStorage.setItem('dexes', JSON.stringify(dexes));
     return dex;
   }
 );

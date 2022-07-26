@@ -1,5 +1,5 @@
-import { FC, useMemo } from "react";
-import { Dex } from "@data/types";
+import { FC, useMemo } from 'react';
+import { Dex } from '@data/types';
 
 export const Export: FC<{ dex: Dex }> = ({ dex }) => {
   const dataUrl = useMemo(
@@ -8,7 +8,7 @@ export const Export: FC<{ dex: Dex }> = ({ dex }) => {
   );
 
   return (
-    <a download={`${dex.name}.json`} href={dataUrl} className="btn">
+    <a download={`${dex.name}.json`} href={dataUrl} className='btn'>
       Export
     </a>
   );

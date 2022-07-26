@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { FC } from "react";
+import Link from 'next/link';
+import { FC } from 'react';
 
 interface PageNavigationProps {
   backHref?: string;
@@ -7,10 +7,10 @@ interface PageNavigationProps {
 
 export const PageNavigation: FC<PageNavigationProps> = ({ backHref }) => {
   return (
-    <nav className="p-1">
+    <nav className='p-1'>
       {backHref && (
         <Link href={backHref}>
-          <a className="link">Back</a>
+          <a className='link'>Back</a>
         </Link>
       )}
     </nav>

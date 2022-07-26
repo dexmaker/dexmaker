@@ -1,6 +1,6 @@
-import { FC } from "react";
-import Link from "next/link";
-import { Dex } from "@data/types";
+import { FC } from 'react';
+import Link from 'next/link';
+import { Dex } from '@data/types';
 
 export const MonNavigation: FC<{
   dex: Dex;
@@ -15,10 +15,10 @@ export const MonNavigation: FC<{
     dex.mons[dex.mons.indexOf(mon) + 1];
 
   return (
-    <nav className="flex justify-center text-xs text-center">
+    <nav className='flex justify-center text-xs text-center'>
       {prev && (
         <Link href={`/dex/${dex.id}/${prev.indexNumber}`}>
-          <button className="mon-nav">
+          <button className='mon-nav'>
             &larr; #{prev.indexNumber}
             <br />
             {prev.name}
@@ -26,7 +26,7 @@ export const MonNavigation: FC<{
         </Link>
       )}
       {mon && (
-        <button className="mon-nav" disabled>
+        <button className='mon-nav' disabled>
           #{mon.indexNumber}
           <br />
           {mon.name}
@@ -34,7 +34,7 @@ export const MonNavigation: FC<{
       )}
       {next && (
         <Link href={`/dex/${dex.id}/${next.indexNumber}`}>
-          <button className="mon-nav">
+          <button className='mon-nav'>
             #{next.indexNumber} &rarr;
             <br />
             {next.name}

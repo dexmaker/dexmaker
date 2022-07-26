@@ -1,4 +1,4 @@
-import { FieldType } from "./FieldType";
+import { FieldType } from './FieldType';
 
 interface StatBase<T, F extends FieldType> {
   name: string;

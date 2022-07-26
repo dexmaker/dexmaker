@@ -1,3 +1,3 @@
-import "@styles/globals.css";
+import '@styles/globals.css';
 
-export { AppComponent as default } from "@components/pages/AppComponent";
+export { AppComponent as default } from '@components/pages/AppComponent';

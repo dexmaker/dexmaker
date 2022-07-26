@@ -1,4 +1,4 @@
 export enum FieldType {
-  NUMERIC = "numeric",
-  ENUM = "enum",
+  NUMERIC = 'numeric',
+  ENUM = 'enum',
 }

@@ -1,6 +1,6 @@
-import { GetServerSideProps } from "next";
-import { getDexes } from "@helpers/getDexes";
-import { HomePage, HomePageProps } from "@components/pages/HomePage";
+import { GetServerSideProps } from 'next';
+import { getDexes } from '@helpers/getDexes';
+import { HomePage, HomePageProps } from '@components/pages/HomePage';
 
 export default HomePage;
 
